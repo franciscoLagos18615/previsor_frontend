@@ -21,6 +21,7 @@
                 {name: prestadores[8].nombre, value: prestadores[8].codigo_sis},
 
             ]"
+            
             :options="options"
         ></schart>
         
@@ -53,6 +54,7 @@ export default {
             type: 'bar',
             width: 1150,
             height: 300,
+        
             options: {
                 title: 'Grafico que representa la evaluacion positiva de la isapre'
             }

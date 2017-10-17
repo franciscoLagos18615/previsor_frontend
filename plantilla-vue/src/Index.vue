@@ -2,7 +2,7 @@
 <div class="center">
   
   <h2>{{title}}</h2>
-    <img class="logo-big" src="./img/vue-logo.png" />
+    <img class="logo-big" src="./img/previsor2.png" />
     <p>
       Plantilla hecha con Vue.js y Webpack
     </p>

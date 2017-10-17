@@ -9,7 +9,7 @@
         <a href="#/">Home</a>
         <!--a href="#/actors">Lista</a-->
         <a href="#/grafic">Grafico Isapres</a>
-        <a href="#/uno">Grafico Prueba</a>
+        <a href="#/uno">Grafico Prueba Torta</a>
       
       </nav>
 
