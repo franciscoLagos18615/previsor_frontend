@@ -2,8 +2,8 @@
   <div>
     <header>
       <div class="branding">
-        <img class ="logo-small" src="./img/fidget-spinner.svg" />
-        <span>Nagevación superior</span>
+        <img class ="logo-small" src="./img/PreVisor_logo_vector.svg" />
+        <!-- <span>Nagevación superior</span> -->
       </div>
       <nav>
         <a href="#/">Home</a>
@@ -19,7 +19,7 @@
       <router-view></router-view>
     </main>
     <footer>
-      Footer
+      Grupo 7 - Taller de base de datos - 2do semestre 2017
     </footer>
 </div>
 </template>

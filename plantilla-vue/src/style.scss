@@ -1,6 +1,9 @@
 
-$main-color:#54C08B;
-$secondary-color:#37495F;
+$main-color:#FFFFFF;
+$secondary-color:#FFFFFF;
+$verde:#4CAF50;
+$acentos:#03A9F4;
+$texto-normal:#757575;
 /**
  * Demo Styles
  */
@@ -17,7 +20,7 @@ html {
 }
 
 body {
-  color:$secondary-color;
+  color:$texto-normal;
   position: relative;
   margin: 0;
   padding-bottom: 6rem;
@@ -28,7 +31,7 @@ body {
 header{
 
   padding: 10px 20px;
-  background-color: lighten(#DCEDC8, 3%);
+  background-color: $verde;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,12 +66,31 @@ header{
     }
   }
 }
-.center {
+.titulos {
+  color:#ffffff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #689F38;
+  position: absolute;
+    width: 100%;
+    left: 0;
+  padding: 20px;
+}
+.centercenter {
   text-align: center;
   margin: 0 auto;
   padding-top: 64px;
   max-width: 640px;
   width: 94%;
+  img{
+    max-width: 200px;
+  }
+}
+.center {
+  background-color: $verde;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 64px;
+  width: 100%;
   img{
     max-width: 200px;
   }
@@ -103,12 +125,14 @@ header{
  */
 
 footer {
+  color: $main-color;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
+  background-color: lighten(#DCEDC8, 6%);
+  background-color: $verde;
   text-align: center;
 }
 .logo-small{
