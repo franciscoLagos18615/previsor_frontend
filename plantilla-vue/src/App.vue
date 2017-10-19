@@ -8,7 +8,7 @@
       <nav>
         <a href="#/">Home</a>
         <!--a href="#/actors">Lista</a-->
-        <a href="#/grafic">Grafico Isapres</a>
+        <!--a href="#/grafic">Grafico Isapres</a-->
         <a href="#/uno">Grafico Prueba Torta</a>
       
       </nav>
@@ -18,6 +18,8 @@
     <main class="container">
       <router-view></router-view>
     </main>
+
+
     <footer>
       Grupo 7 - Taller de base de datos - 2do semestre 2017
     </footer>
