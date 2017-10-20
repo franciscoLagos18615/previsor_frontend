@@ -29,9 +29,10 @@
 
     </ul>
            
-        
        
     </div>
+
+
     
 </template>
 
@@ -68,7 +69,7 @@ export default {
     console.log('Index.vue');
 
     // GET /someUrl
-    this.$http.get('http://localhost:8081/previsor-back/prestador')
+    this.$http.get('http://localhost:8082/previsor-back/prestador')
     .then(response=>{
        // get body data
       this.prestadores = response.body;

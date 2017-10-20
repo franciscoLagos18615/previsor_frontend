@@ -1,3 +1,5 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 
 $main-color:#FFFFFF;
 $secondary-color:#FFFFFF;
@@ -25,7 +27,7 @@ body {
   margin: 0;
   padding-bottom: 6rem;
   min-height: 100%;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header{
@@ -80,6 +82,15 @@ header{
   margin: 0 auto;
   padding-top: 64px;
   max-width: 640px;
+  width: 94%;
+  img{
+    max-width: 200px;
+  }
+}
+.center2 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
   width: 94%;
   img{
     max-width: 200px;
