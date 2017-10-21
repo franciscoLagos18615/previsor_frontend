@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 import Index from './Index.vue';
 import Actors from './Actors.vue';
 import GraficoIsapre from './GraficoComparadorAprobIsapre.vue';
-import Demo from './Prueba.vue';
+import Demo from './valoraciones.vue';
 import VueResource from 'vue-resource';
 //import VueCharts.core from 'otro.js';
 require("./style.scss");

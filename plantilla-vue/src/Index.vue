@@ -5,7 +5,7 @@
             <img class="logo-big" src="./img/PreVisor_logo_transp.png" style="max-width: 640px" />
             <p style="padding-top: 10px;padding-left: 50px;padding-right: 50px;padding-bottom: 50px;color: #FFFFFF">
               PreVisor es un observatorio de la opinión pública sobre el sistema de previsión de salud en Chile, tomando las opiniones de los usuarios de twitter, previsor entrega una mirada amplia sobre como responden los chilenos al servicio entregado por los múltiples prestadores del sistema.
-            </p>   
+            </p>
         </div>
 
     <ul class="prestador-list">
@@ -26,14 +26,14 @@
                     {name: prestadores[8].nombre, value: prestadores[8].codigo_sis},
 
                 ]"
-                
+
                 :options="options"
             ></schart>
         </li>
     </ul>
 
     <p class="center2">
-    Eporcentaje de aprobación, que es una fracción entre los comentarios positivos y los negativos tomados desde twitter para cada prestador.
+    El porcentaje de aprobación, que es una fracción entre los comentarios positivos y los negativos tomados desde twitter para cada prestador.
     </p>
 
     </div>
@@ -43,9 +43,9 @@
 import Schart from 'vue-schart';
     //import algo from './otro.js';
 
-    
+
 export default {
-    
+
 
     data() {
 
@@ -56,7 +56,7 @@ export default {
             type: 'bar',
             width: 1280,
             height: 500,
-        
+
             options: {
                 title: 'PORCENTAJE DE APROBACION DE LOS PRESTADORES DE SALUD ',
                 bgColor: '#FFFFFF',//FONDO DEL GRAFICO
@@ -84,8 +84,8 @@ export default {
        // error callback
        console.log('error cargando los prestadores');
     })
-  }    
-    
+  }
+
 
 }
 </script>
