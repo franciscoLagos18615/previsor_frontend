@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="center2">
 <h1>Valoraciones por prestador</h1>
 
 <select  v-on:click="hacerFalse()" v-model="selected">
