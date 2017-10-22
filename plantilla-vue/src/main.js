@@ -4,6 +4,8 @@ import Index from './Index.vue';
 import Actors from './Actors.vue';
 import GraficoIsapre from './GraficoComparadorAprobIsapre.vue';
 import Demo from './valoraciones.vue';
+import admin from './admin.vue';
+
 import VueResource from 'vue-resource';
 //import VueCharts.core from 'otro.js';
 require("./style.scss");
@@ -17,7 +19,9 @@ const routes = [
   { path: '/index', alias: '/', component: Index},
   { path:'/actors', component: Actors},
   { path:'/grafic',component: GraficoIsapre},
-  { path:'/uno', component: Demo}
+  { path:'/uno', component: Demo},
+  { path:'/admin', component: admin}
+
 ]
 
 // Create the router instance and pass the `routes` option
