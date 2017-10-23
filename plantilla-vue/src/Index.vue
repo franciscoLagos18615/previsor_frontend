@@ -15,15 +15,20 @@
                 :width="width"
                 :height="height"
                 :data= "[
-                    {name: prestadores[0].nombre, value: prestadores[0].codigo_sis},
-                    {name: prestadores[1].nombre, value: prestadores[1].codigo_sis},
-                    {name: prestadores[2].nombre, value: prestadores[2].codigo_sis},
-                    {name: prestadores[3].nombre, value: prestadores[3].codigo_sis},
-                    {name: prestadores[4].nombre, value: prestadores[4].codigo_sis},
-                    {name: prestadores[5].nombre, value: prestadores[5].codigo_sis},
-                    {name: prestadores[6].nombre, value: prestadores[6].codigo_sis},
-                    {name: prestadores[7].nombre, value: prestadores[7].codigo_sis},
-                    {name: prestadores[8].nombre, value: prestadores[8].codigo_sis},
+                    {name: prestadores[0].nombre, value: prestadores[0].positivas},
+                    {name: prestadores[1].nombre, value: prestadores[1].positivas},
+                    {name: prestadores[2].nombre, value: prestadores[2].positivas},
+                    {name: prestadores[3].nombre, value: prestadores[3].positivas},
+                    {name: prestadores[4].nombre, value: prestadores[4].positivas},
+                    {name: prestadores[5].nombre, value: prestadores[5].positivas},
+                    {name: prestadores[6].nombre, value: prestadores[6].positivas},
+                    {name: prestadores[7].nombre, value: prestadores[7].positivas},
+                    {name: prestadores[8].nombre, value: prestadores[8].positivas},
+                    {name: prestadores[9].nombre, value: prestadores[9].positivas},
+                    {name: prestadores[10].nombre, value: prestadores[10].positivas},
+                    {name: prestadores[11].nombre, value: prestadores[11].positivas},
+                    {name: prestadores[12].nombre, value: prestadores[12].positivas},
+                    {name: prestadores[13].nombre, value: prestadores[13].positivas},
 
                 ]"
 
@@ -75,7 +80,7 @@ export default {
     console.log('Index.vue');
 
     // GET /someUrl
-    this.$http.get('http://localhost:8082/previsor-back/prestador')
+    this.$http.get('http://localhost:8082/previsor-back/prestador/valoraciones')
     .then(response=>{
        // get body data
       this.prestadores = response.body;

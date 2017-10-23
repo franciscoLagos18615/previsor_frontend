@@ -8,9 +8,9 @@
             :width="width"
             :height="height"
             :data= "[
-                {name: 'Positivo', value: 4},
-                {name: 'Negativo', value: 5},
-                {name: 'Neutral', value: 6}
+                {name: 'Positivo', value: prestadores.positivas},
+                {name: 'Negativo', value: prestadores.negativas},
+                {name: 'Neutral', value: prestadores.neutrales},
 //prestadores.negativas,positivas,neutrales
             ]"
 
