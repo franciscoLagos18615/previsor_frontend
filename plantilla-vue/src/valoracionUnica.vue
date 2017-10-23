@@ -8,9 +8,9 @@
             :width="width"
             :height="height"
             :data= "[
-                {name: 'Positivo', value: prestadores.positivas},
-                {name: 'Negativo', value: prestadores.negativas},
-                {name: 'Neutral', value: prestadores.neutrales},
+                {name: 'Positivo', value: Math.ceil( (prestadores.positivas*100)/(prestadores.positivas+prestadores.negativas+prestadores.neutrales))},
+                {name: 'Negativo', value: Math.ceil((prestadores.negativas*100)/(prestadores.positivas+prestadores.negativas+prestadores.neutrales))},
+                {name: 'Neutral', value: Math.ceil((prestadores.neutrales*100)/(prestadores.positivas+prestadores.negativas+prestadores.neutrales))},
 //prestadores.negativas,positivas,neutrales
             ]"
 
