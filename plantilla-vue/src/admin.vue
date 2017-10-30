@@ -1,6 +1,7 @@
 <template>
     <div id="add-blog">
         <h2>Menu administrador</h2>
+
         <form v-if="!autenticado">
             <p>
             Ingrese su contraseña para desbloquear las funcionalidades de administrador.
@@ -8,14 +9,76 @@
             <label>Contraseña:</label>
             <input type="password" v-model="contrasena" v-show="!showPass"/>
             <input type="text" v-model="contrasena" v-show="showPass"/>
+            <br/>
             <button v-on:click="ingreso">Ingresar</button>
             <button v-on:click="mostrarPass">Mostrar</button>
         </form>
+
         <form v-if="!submitted, autenticado">
+            <h3>Agregar Keywords</h3>
+            <p>
+            Ingrese una nueva palabra clave para agregar a PreVisor.
+            </p>
             <label>Nueva keyword:</label>
             <input type="text" v-model="keyword"/>
+            <label>Asignado a un prestador?</label>
+            <input type="checkbox" id="checkbox" v-model="pAsignado">
+            <select v-model="prestadorSelected">
+                <option disabled value="">Seleccione un Prestador</option>
+                <option>Banmédica S.A.</option>
+                <option>Chuquicamata Ltda.</option>
+                <option>Colmena Golden Cross S.A.</option>
+                <option>Consalud S.A.</option>
+                <option>Cruz Blanca S.A.</option>
+                <option>Cruz del Norte Ltda.</option>
+                <option>Nueva Masvida S.A.</option>
+                <option>Fundación Ltda.</option>
+                <option>Fusat Ltda.</option>
+                <option>Masvida S.A.</option>
+                <option>Río Blanco Ltda.</option>
+                <option>San Lorenzo Ltda.</option>
+                <option>Vida Tres S.A.</option>
+                <option>Fonasa</option>
+            </select>
             <br/>
             <button v-on:click="post">Confirmar</button>
+        </form>
+
+        <div v-if="autenticado"style="padding-top: 10px; padding-bottom: 10px;"><hr></div>
+
+        <form v-if="!submitted, autenticado">
+            <h3>Agregar Prestadores</h3>
+            <p>
+            Ingrese un nuevo prestador para observar en PreVisor.
+            </p>
+            <label>Nombre:</label>
+            <input type="text" v-model="pNombre"/>
+            <label>Código superintendencia:</label>
+            <input type="text" v-model="pCodigo"/>
+            <label>Página Web:</label>
+            <input type="text" v-model="pEnlace"/>
+            <label>Teléfono 24x7:</label>
+            <input type="text" v-model="pFono"/>
+            <br/>
+            <button v-on:click="postPrestador">Confirmar</button>
+        </form>
+
+        <div v-if="autenticado"style="padding-top: 10px; padding-bottom: 10px;"><hr></div>
+
+        <form v-if="!submitted, autenticado">
+            <h3>Actualización de contraseña</h3>
+            <p>
+            Ingrese la contraseña actual y la nueva para actualizarla.
+            </p>
+            <label>Contraseña actual:</label>
+            <input type="password" v-model="contrasena" v-show="!showPass"/>
+            <input type="text" v-model="contrasena" v-show="showPass"/>
+            <label>Nueva contraseña:</label>
+            <input type="password" v-model="contrasenaNueva" v-show="!showPass"/>
+            <input type="text" v-model="contrasenaNueva" v-show="showPass"/>
+            <br/>
+            <button v-on:click="ingreso">Cambiar</button>
+            <button v-on:click="mostrarPass">Mostrar</button>
         </form>
 
     </div>
@@ -32,6 +95,13 @@ export default {
             contrasena: '',
             autenticado: false,
             showPass: false,
+            contrasenaNueva: '',
+            pNombre: '',
+            pCodigo: '',
+            pEnlace: '',
+            pFono: '',
+            prestadorSelected: '',
+            pAsignado: false
         }
     },
     methods: {
@@ -66,6 +136,22 @@ export default {
                     alert("Contraseña correcta");
                 }
     });
+        },
+        cambio: function(){
+            //TODO cambiar acá la lógica
+            this.$http.get('http://localhost:8082/previsor-back/user/verify/admin/' + this.contrasena).then(response=>{
+                this.autenticado = response.body.estado;
+                if(this.autenticado === false){
+                    alert("Contraseña incorrecta");
+                }
+                else{
+                    alert("Contraseña correcta");
+                }
+                this.contrasena = '';
+    });
+        },
+        postPrestador: function(){
+            
         }
     }
 }
