@@ -14,6 +14,26 @@
             <button v-on:click="mostrarPass">Mostrar</button>
         </form>
 
+        <div v-if="autenticado">
+            <h3>Prestadores</h3>
+            <p>Revise los prestadores existentes en el sistema.</p>
+            <table>
+                <!--
+                <thead>
+                    <tr>
+                        <th>Nombre</th><th></th>
+                    </tr>    
+                </thead>
+                -->
+            <tr v-for="prestador in prestadores">
+                <th style="padding-bottom: 5px; padding-right: 30px">{{prestador.nombre}}</th>
+                <th><button v-on:click="borrarPrestador('id')">Borrar</button></th>
+            </tr>
+            </table>
+        </div>
+
+        <div v-if="autenticado"style="padding-top: 10px; padding-bottom: 10px;"><hr></div>
+
         <form v-if="!submitted, autenticado">
             <h3>Agregar Keywords</h3>
             <p>
@@ -21,9 +41,10 @@
             </p>
             <label>Nueva keyword:</label>
             <input type="text" v-model="keyword"/>
-            <label>Asignado a un prestador?</label>
+            <label style="display: inline-block">Asignado a un prestador?</label>
             <input type="checkbox" id="checkbox" v-model="pAsignado">
-            <select v-model="prestadorSelected">
+            <br/>
+            <select v-model="prestadorSelected" v-show="pAsignado"style="margin-bottom: 20px">
                 <option disabled value="">Seleccione un Prestador</option>
                 <option>Banmédica S.A.</option>
                 <option>Chuquicamata Ltda.</option>
@@ -71,13 +92,13 @@
             Ingrese la contraseña actual y la nueva para actualizarla.
             </p>
             <label>Contraseña actual:</label>
-            <input type="password" v-model="contrasena" v-show="!showPass"/>
-            <input type="text" v-model="contrasena" v-show="showPass"/>
+            <input type="password" v-model="contrasenaActual" v-show="!showPass"/>
+            <input type="text" v-model="contrasenaActual" v-show="showPass"/>
             <label>Nueva contraseña:</label>
             <input type="password" v-model="contrasenaNueva" v-show="!showPass"/>
             <input type="text" v-model="contrasenaNueva" v-show="showPass"/>
             <br/>
-            <button v-on:click="ingreso">Cambiar</button>
+            <button v-on:click="cambio">Cambiar</button>
             <button v-on:click="mostrarPass">Mostrar</button>
         </form>
 
@@ -90,12 +111,15 @@
 export default {
     data () {
         return {
-                keyword: '',
+            prestadores:[],
+            keyword: '',
             submitted: false,
             contrasena: '',
             autenticado: false,
             showPass: false,
+            contrasenaActual: '',
             contrasenaNueva: '',
+            actualBuena: false,
             pNombre: '',
             pCodigo: '',
             pEnlace: '',
@@ -112,8 +136,12 @@ export default {
                 "palabra": this.keyword
             }).then(function(data){
                 console.log(data);
-                alert('Se ha insertado correctamente');
-
+                if(this.pAsignado){
+                    alert('Se ha insertado correctamente y se ha asignado a un prestador');
+                }
+                else{
+                    alert('Se ha insertado correctamente');
+                }
             });
         },
         mostrarPass: function(){
@@ -133,31 +161,62 @@ export default {
                     this.contrasena = '';
                 }
                 else{
+                    this.showPass = false;
                     alert("Contraseña correcta");
                 }
     });
         },
         cambio: function(){
-            //TODO cambiar acá la lógica
-            this.$http.get('http://localhost:8082/previsor-back/user/verify/admin/' + this.contrasena).then(response=>{
-                this.autenticado = response.body.estado;
-                if(this.autenticado === false){
-                    alert("Contraseña incorrecta");
+            this.$http.get('http://localhost:8082/previsor-back/user/verify/admin/' + this.contrasenaActual).then(response=>{
+                this.actualBuena = response.body.estado;
+                if(this.actualBuena === false){
+                    alert("Contraseña actual incorrecta");
                 }
                 else{
-                    alert("Contraseña correcta");
+                    // Rest para cambiar la contraseña
+                    alert("La contraseña se ha modificado exitosamente");
                 }
-                this.contrasena = '';
+                this.contrasenaNueva = '';
+                this.contrasenaActual = '';
     });
         },
         postPrestador: function(){
-            
+            this.$http.post('http://localhost:8082/previsor-back/prestador', {
+                "nombre": this.pNombre,
+                "enlace": this.pEnlace,
+                "fono24x7": this.pFono,
+                "codigo_sis": this.pCodigo
+            }).then(function(data){
+                console.log(data);
+                alert('Se ha agregado un prestador correctamente');
+
+            });
         }
-    }
+        ,
+        borrarPrestador: function(id){
+            //TODO metodo get para borrar un prestador
+        }
+    },
+    mounted:function(){
+    // GET /someUrl
+    this.$http.get('http://localhost:8082/previsor-back/prestador/')
+    .then(response=>{
+       // get body data
+      this.prestadores = response.body;
+     console.log('prestadores',this.prestadores)
+    }, response=>{
+       // error callback
+       console.log('error cargando los prestadores');
+    })
+  }
 }
 </script>
 
 <style>
+table{
+    text-align: left;
+    padding-bottom: 10px
+}
 #add-blog *{
     box-sizing: border-box;
 }

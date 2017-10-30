@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Index from './Index.vue';
-import Actors from './Actors.vue';
 import GraficoIsapre from './GraficoComparadorAprobIsapre.vue';
 import Demo from './valoraciones.vue';
 import admin from './admin.vue';
@@ -17,7 +16,6 @@ Vue.use(VueRouter);
 Vue.use(VueResource);
 const routes = [
   { path: '/index', alias: '/', component: Index},
-  { path:'/actors', component: Actors},
   { path:'/grafic',component: GraficoIsapre},
   { path:'/uno', component: Demo},
   { path:'/admin', component: admin}
