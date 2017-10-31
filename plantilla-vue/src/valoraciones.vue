@@ -3,7 +3,7 @@
 <h1>Valoraciones por prestador</h1>
 
 <select  v-on:click="hacerFalse()" v-model="selected">
-    <option disabled value="">Please select one</option>
+    <option disabled value="">Seleccione un prestador</option>
       <option>Banmédica S.A.</option>
       <option>Chuquicamata Ltda.</option>
      <option>Colmena Golden Cross S.A.</option>
@@ -18,10 +18,31 @@
      <option>San Lorenzo Ltda.</option>
      <option>Vida Tres S.A.</option>
      <option>Fonasa</option>
-
-
 </select>
+
 <button v-on:click="hacerTrue()">Consultar</button>
+
+<div v-if="selected != ''">
+  <div v-if="clave == true">
+
+   <table v-for="prestador in prestadores" v-if="selected == prestador.nombre" style="padding-top:15px; margin-left: auto; margin-right: auto;">
+      <tr>
+        <td rowspan="3">
+        <img :src="'./img/' + prestador.prestadorId + '.png'" style="max-width: 200px; padding:10px" />
+        </td>
+        <td>Página Web: </td><td>{{prestador.enlace}}</td>
+      </tr>
+      <tr>
+        <td>Teléfono 24x7: </td><td>{{prestador.fono24x7}}</td>
+      </tr>
+      <tr>
+        <td>Código de la superintendencia: </td><td>{{prestador.codigo_sis}}</td>
+      </tr>
+    </table>
+
+  </div>
+</div>
+
 <div v-if="selected != ''">
   <div v-if="clave == true">
 
@@ -82,7 +103,6 @@
 
     </div>
 
-
   </div>
 </div>
 </div>
@@ -94,18 +114,15 @@
     import valor from './valoracionUnica.vue'
 
 export default {
-
-
     components:{
        'app-valoracionUnica':valor
     },
     data() {
         return{
-             selected: '',
+            prestadores:[],
+            selected: '',
             clave: false
         }
-
-
     },
     methods: {
       hacerTrue:function(){
@@ -119,13 +136,20 @@ export default {
         console.log(this.selected);
         console.log(this.clave);
        this.clave = false;
-
-
       }
-    }
-
-
-
+    },
+    mounted:function(){
+    // GET /someUrl
+    this.$http.get('http://localhost:8082/previsor-back/prestador/')
+    .then(response=>{
+       // get body data
+      this.prestadores = response.body;
+     console.log('prestadores',this.prestadores)
+    }, response=>{
+       // error callback
+       console.log('error cargando los prestadores');
+    })
+  }
 }
 
 </script>
