@@ -24,11 +24,11 @@
 
 <div v-if="selected != ''">
   <div v-if="clave == true">
-
-   <table v-for="prestador in prestadores" v-if="selected == prestador.nombre" style="padding-top:15px; margin-left: auto; margin-right: auto;">
+  <h3>Información general</h3>
+   <table v-for="prestador in prestadores" v-if="selected == prestador.nombre" style="margin-left: auto; margin-right: auto;">
       <tr>
         <td rowspan="3">
-        <img :src="'./img/' + prestador.prestadorId + '.png'" style="max-width: 200px; padding:10px" />
+        <img :src="logo" style="max-width: 200px; padding:10px" />
         </td>
         <td>Página Web: </td><td>{{prestador.enlace}}</td>
       </tr>
@@ -149,6 +149,41 @@ export default {
        // error callback
        console.log('error cargando los prestadores');
     })
+  },
+  computed: {
+    logo: function () {
+    switch(this.selected){
+    case 'Banmédica S.A.':
+      return "http://www.supersalud.gob.cl/664/articles-2528_banmedica.jpg"
+    case 'Chuquicamata Ltda.':
+      return "http://www.supersalud.gob.cl/664/articles-2528_chuquicamata.bmp"
+    case 'Colmena Golden Cross S.A.':
+      return "http://www.supersalud.gob.cl/664/articles-2528_colmena.jpg"
+    case 'Consalud S.A.':
+      return "http://www.supersalud.gob.cl/664/articles-2528_consalud.jpg"
+    case 'Cruz Blanca S.A.':
+      return "http://www.supersalud.gob.cl/664/articles-2528_recurso_1.bmp"
+    case 'Cruz del Norte Ltda.':
+      return "http://www.supersalud.gob.cl/664/articles-2528_cruzdelNorte.png"
+    case 'Nueva Masvida S.A.':
+      return "http://www.supersalud.gob.cl/664/articles-2528_optima.jpg"
+    case 'Fundación Ltda.':
+      return "http://www.supersalud.gob.cl/664/articles-2528_fundacion.jpg"
+    case 'Fusat Ltda.':
+      return "http://www.supersalud.gob.cl/664/articles-2528_fusat.jpg"
+    case 'Río Blanco Ltda.':
+      return "http://www.supersalud.gob.cl/664/articles-2528_RioBlanco.jpg"
+    case 'San Lorenzo Ltda.':
+      return "http://www.supersalud.gob.cl/664/articles-2528_SanLorenzo.jpg"
+    case 'Vida Tres S.A.':
+      return "http://www.supersalud.gob.cl/664/articles-2528_VidaTres.jpg"
+    case 'Fonasa':
+      return "https://upload.wikimedia.org/wikipedia/commons/0/08/Logo_de_Fonasa.jpg"
+    default:
+      return "http://www.calculens.com:8080/Calculens/images/img_default.jpg"
+
+    }
+    }
   }
 }
 
