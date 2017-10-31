@@ -11,8 +11,7 @@
         <!--a href="#/grafic">Grafico Isapres</a-->
         <a href="#/uno">Valoraciones</a>
         <a href="#/admin">Administración</a>
-
-
+        <a href="#/comparacion">Compara</a>
       </nav>
 
     </header>
