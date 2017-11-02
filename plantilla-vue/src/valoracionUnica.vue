@@ -2,14 +2,7 @@
 
     <div id="grafico"  >
 
-    <h3>Twits analizados</h3>
-        <table style="margin-left: auto; margin-right: auto;">
-      <tr>
-        <td>Positivos: </td><td>{{this.prestadores.positivas}}</td>
-        <td>Negativos: </td><td>{{this.prestadores.negativas}}</td>
-        <td>Neutrales: </td><td>{{this.prestadores.neutrales}}</td>
-      </tr>
-    </table>
+    <h3>Análisis</h3>
 
             <ul class="prestador-list">
       <li >
@@ -61,6 +54,7 @@ export default {
             type: 'pie',
             width: 800,
             height: 450,
+            cantidadValoraciones: 0
 
         }
     },
