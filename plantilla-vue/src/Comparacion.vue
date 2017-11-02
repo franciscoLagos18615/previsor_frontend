@@ -4,7 +4,7 @@
 	<p>Selecciona dos prestadores de previsión de salud para comparar la opinión pública en twitter.</p>
 		<div style=" background-color: #f5f5f5; padding: 20px;">
 			<div v-for="prestador in prestadores" style="display: inline-block; margin: 5px;">
-		  <input type="checkbox" :id='prestador.prestadorId' :value='prestador.prestadorId' :disabled="selected.length > 1 && selected.indexOf(prestador.prestadorId) === -1" v-model="selected">
+		  <input type="checkbox" :id='prestador.prestadorId' :value='prestador.prestadorId' :disabled="selected.length > 1 && selected.indexOf(prestador.prestadorId) === -1" v-model="selected" style="display: inline-block;">
 		  <label :for='prestador.prestadorId'>{{prestador.nombre}}</label>
 		</div>
 		</div>

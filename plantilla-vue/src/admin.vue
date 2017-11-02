@@ -46,20 +46,7 @@
             <br/>
             <select v-model="prestadorSelected" v-show="pAsignado"style="margin-bottom: 20px">
                 <option disabled value="">Seleccione un Prestador</option>
-                <option>Banmédica S.A.</option>
-                <option>Chuquicamata Ltda.</option>
-                <option>Colmena Golden Cross S.A.</option>
-                <option>Consalud S.A.</option>
-                <option>Cruz Blanca S.A.</option>
-                <option>Cruz del Norte Ltda.</option>
-                <option>Nueva Masvida S.A.</option>
-                <option>Fundación Ltda.</option>
-                <option>Fusat Ltda.</option>
-                <option>Masvida S.A.</option>
-                <option>Río Blanco Ltda.</option>
-                <option>San Lorenzo Ltda.</option>
-                <option>Vida Tres S.A.</option>
-                <option>Fonasa</option>
+                <option v-for="prestador in prestadores" :value='prestador.prestadorId'>{{prestador.nombre}}</option>
             </select>
             <br/>
             <button v-on:click="post">Confirmar</button>
@@ -124,7 +111,7 @@ export default {
             pCodigo: '',
             pEnlace: '',
             pFono: '',
-            prestadorSelected: '',
+            prestadorSelected: 0,
             pAsignado: false
         }
     },
@@ -135,9 +122,12 @@ export default {
             this.$http.post('http://localhost:8082/previsor-back/keyword', {
                 "palabra": this.keyword
             }).then(function(data){
-                console.log(data);
                 if(this.pAsignado){
-                    alert('Se ha insertado correctamente y se ha asignado a un prestador');
+                    this.$http.post('http://localhost:8082/previsor-back/keyword/' + data.body.keywordId + '/prestador/' +  this.prestadorSelected, {
+                    }).then(function(data){
+                        console.log(data);
+                        alert('Se ha insertado correctamente y se ha asignado a un prestador');
+                    });
                 }
                 else{
                     alert('Se ha insertado correctamente');
