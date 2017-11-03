@@ -25,6 +25,9 @@
 		  <tr>
 			<th v-for="prestador in prestadores" v-if="selected[0] == prestador.prestadorId"><app-valoracionUnica v-bind:nPrestador = prestador.prestadorId /></th>
 		  <th v-for="prestador in prestadores" v-if="selected[1] == prestador.prestadorId"><app-valoracionUnica v-bind:nPrestador = prestador.prestadorId /></th>
+
+			se renderiza solo una vez, analizar comportamiento de v-if para la renderizacion del grafico
+			tb falta insertarle los datos reales de valorizaciones
 			-->
 
 			<canvas id="mycanvas" count="2"	></canvas>
