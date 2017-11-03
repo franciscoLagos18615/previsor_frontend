@@ -12,6 +12,12 @@ require("./style.scss");
 
 import App from './App.vue';
 
+//imports para utilizar VueCharts-------------------------
+import 'chart.js'
+import 'hchs-vue-charts'
+
+Vue.use(window.VueCharts)
+//-------------------------------------------
 Vue.use(VueRouter);
 Vue.use(VueResource);
 const routes = [

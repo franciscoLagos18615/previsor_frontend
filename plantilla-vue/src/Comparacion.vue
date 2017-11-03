@@ -12,21 +12,38 @@
 		<br>
 		<table style="width:100%">
 		  <tr>
-			<th v-for="prestador in prestadores" v-if="selected[0] == prestador.prestadorId">{{prestador.nombre}}</th> 
-		  <th v-for="prestador in prestadores" v-if="selected[1] == prestador.prestadorId">{{prestador.nombre}}</th> 
+			<th v-for="prestador in prestadores" v-if="selected[0] == prestador.prestadorId">{{prestador.nombre}}</th>
+		  <th v-for="prestador in prestadores" v-if="selected[1] == prestador.prestadorId">{{prestador.nombre}}</th>
 		  </tr>
 
 		  <tr>
-		    <td v-for="prestador in prestadores" v-if="selected[0] == prestador.prestadorId">Twitts Analizados: {{prestador.valoraciones.length}}</td>
-		    <td v-for="prestador in prestadores" v-if="selected[1] == prestador.prestadorId">Twitts Analizados: {{prestador.valoraciones.length}}</td>
+		    <td v-for="prestador in prestadores" v-if="selected[0] == prestador.prestadorId">Tweets Analizados: {{prestador.valoraciones.length}}</td>
+		    <td v-for="prestador in prestadores" v-if="selected[1] == prestador.prestadorId">Tweets Analizados: {{prestador.valoraciones.length}}</td>
 		  </tr>
 
 		  <!-- ACA DEBERÍA IR EL NUEVO GRÁFICO
 		  <tr>
-			<th v-for="prestador in prestadores" v-if="selected[0] == prestador.prestadorId"><app-valoracionUnica v-bind:nPrestador = prestador.prestadorId /></th> 
-		  <th v-for="prestador in prestadores" v-if="selected[1] == prestador.prestadorId"><app-valoracionUnica v-bind:nPrestador = prestador.prestadorId /></th> 
-		  </tr>
-		  -->
+			<th v-for="prestador in prestadores" v-if="selected[0] == prestador.prestadorId"><app-valoracionUnica v-bind:nPrestador = prestador.prestadorId /></th>
+		  <th v-for="prestador in prestadores" v-if="selected[1] == prestador.prestadorId"><app-valoracionUnica v-bind:nPrestador = prestador.prestadorId /></th>
+			-->
+
+			<canvas id="mycanvas" count="2"	></canvas>
+        <chartjs-bar v-for="prestador in prestadores" v-if="selected[0] == prestador.prestadorId"
+					target="mycanvas" :labels="labels" :data="data"
+					:datalabel="prestador.nombre"
+					:backgroundcolor="mybackgroundcolor[0]"
+        	:bordercolor="mybordercolor[0]">
+				</chartjs-bar>
+
+				<chartjs-bar v-for="prestador in prestadores" v-if="selected[1] == prestador.prestadorId"
+					target="mycanvas" :labels="labels" :data="data2"
+					:datalabel="prestador.nombre"
+					:backgroundcolor="mybackgroundcolor[1]"
+					:bordercolor="mybordercolor[1]">
+				></chartjs-bar>
+		  <!--/tr-->
+
+
 
 		</table>
 	</div>
@@ -46,9 +63,14 @@
 		},
 		data(){
 			return{
+				labels: ['Positivos', 'Negativos','Neutros'],
+				data: [1,2,3],
+				data2:[3,4,5],
 				selected: [],
 				prestadores: [],
-				valoraciones: []
+				valoraciones: [],
+				mybackgroundcolor : ['rgba(75,0,192,0.1)','rgba(0,88,88,0.1)'],
+        mybordercolor : ['rgba(75,192,192,1)','rgba(0,192,192,1)']
 			}
 		},
 		methods: {
@@ -60,6 +82,7 @@
 				return 69;
 				}
 			},
+
 		},
 		computed: {
 
@@ -96,5 +119,5 @@ table td, table th {
     padding: 15px;
     text-align: center;
 }
-	
+
 </style>
