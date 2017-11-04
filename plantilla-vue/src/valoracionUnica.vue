@@ -65,6 +65,7 @@ export default {
     mounted:function(){
     console.log('Index.vue');
     var n = this.nPrestador.toString();
+    
     // GET /someUrl
     this.$http.get('http://localhost:8082/previsor-back/prestador/'+n+'/'+'valoraciones')
     .then(response=>{

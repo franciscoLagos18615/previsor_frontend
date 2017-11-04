@@ -21,18 +21,12 @@
                     {name: prestadores[3].nombre, value: prestadores[3].positivas},
                     {name: prestadores[4].nombre, value: prestadores[4].positivas},
                     {name: prestadores[5].nombre, value: prestadores[5].positivas},
-                    {name: prestadores[6].nombre, value: prestadores[6].positivas},
-                    {name: prestadores[7].nombre, value: prestadores[7].positivas},
-                    {name: prestadores[8].nombre, value: prestadores[8].positivas},
-                    {name: prestadores[9].nombre, value: prestadores[9].positivas},
-                    {name: prestadores[10].nombre, value: prestadores[10].positivas},
-                    {name: prestadores[11].nombre, value: prestadores[11].positivas},
-                    {name: prestadores[12].nombre, value: prestadores[12].positivas},
-                    {name: prestadores[13].nombre, value: prestadores[13].positivas},
+                    
 
                 ]"
-
+                
                 :options="options"
+                :conditions="conditions"
             ></schart>
         </li>
     </ul>
@@ -61,15 +55,17 @@ export default {
             type: 'bar',
             width: 1280,
             height: 500,
-
+            
             options: {
-                title: 'PORCENTAJE DE APROBACION DE LOS PRESTADORES DE SALUD ',
+                title: 'PORCENTAJE DE APROBACION DE LOS PRESTADORES DE SALUD ',display: false,
                 bgColor: '#FFFFFF',//FONDO DEL GRAFICO
             titleColor: '#212121',//titulo
             fillColor: '  #4169E1', //barras
             axisColor: '  #4169E1', // border del grafico(titulos eje x e y)
             contentColor: ' #4169E1'//lineas del grafico
-            }
+            
+            },
+            //conditions: clearRect(0,myCanvas.width)
         }
     },
     components:{
