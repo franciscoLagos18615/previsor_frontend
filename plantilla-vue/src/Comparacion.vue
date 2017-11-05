@@ -10,7 +10,7 @@
 		</div>
 
 		<br>
-		<table style="width:100%">
+		<table style="width:100%;">
 		  <tr>
 			<th v-for="prestador in prestadores" v-if="selected[0] == prestador.prestadorId">{{prestador.nombre}}</th>
 		  <th v-for="prestador in prestadores" v-if="selected[1] == prestador.prestadorId">{{prestador.nombre}}</th>
