@@ -12,6 +12,8 @@
         <a href="#/uno">Valoraciones</a>
         <a href="#/admin">Administración</a>
         <a href="#/comparacion">Compara</a>
+        <a href="#/redSocial">Red Social</a>
+
       </nav>
 
     </header>

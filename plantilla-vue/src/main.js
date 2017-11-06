@@ -5,6 +5,7 @@ import GraficoIsapre from './GraficoComparadorAprobIsapre.vue';
 import Demo from './valoraciones.vue';
 import admin from './admin.vue';
 import comparacion from './Comparacion.vue';
+import red from './redSocial.vue';
 
 import VueResource from 'vue-resource';
 //import VueCharts.core from 'otro.js';
@@ -25,7 +26,9 @@ const routes = [
   { path:'/grafic',component: GraficoIsapre},
   { path:'/uno', component: Demo},
   { path:'/admin', component: admin},
-  { path:'/comparacion', component: comparacion}
+  { path:'/comparacion', component: comparacion},
+  { path:'/redSocial', component: red}
+
 ]
 
 // Create the router instance and pass the `routes` option
@@ -38,4 +41,3 @@ new Vue({
   router,
   render: h => h(App)
 })
-
