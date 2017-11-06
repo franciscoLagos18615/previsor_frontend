@@ -31,6 +31,5 @@ Incluye:
 * Para los graficos que coloco el victor ,depedencia 2: npm install chart.js chartkick hchs-vue-charts vue-chartjs vue-chartkick
 
 * Luego de todo esto para ver el grafo:
-* Hay que tomar la carpeta Sigmajs que esta en previsor_frontend y arrastrarla a node_modules en la carpeta plantilla-vue y
-* hacerle npm install 
+* en previsor_frontend cortar la carpeta carpeta Sigmajs y pegarla dentro de node_modules de la carpeta plantilla-vue, finalmente hacer npm install dentro de la carpeta sigma. 
 
