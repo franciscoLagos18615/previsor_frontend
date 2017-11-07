@@ -14,33 +14,19 @@
             
         </li>
     </ul>
-<div class="center2">
-        <canvas id="mycanvas" count="1" width="350" height="150" >
-            
-        </canvas>
-        <chartjs-bar
-                    target="mycanvas" :labels="[prestadores[0].nombre,prestadores[1].nombre,prestadores[2].nombre,prestadores[3].nombre,prestadores[4].nombre,prestadores[5].nombre]" 
-                    :data="[prestadores[0].positivas,prestadores[1].positivas,prestadores[2].positivas,prestadores[3].positivas,prestadores[4].positivas,prestadores[5].positivas]"
-                    :datalabel="labels1"
-                    :backgroundcolor="mybackgroundcolor[0]"
-                    :borderWidth="2"
-            :bordercolor="mybordercolor[0]">
-                </chartjs-bar>
-</div>
-
-
+    <h3 class="center2">Ranking general</h3>
+    <div class="center2">
+        <canvas id="mycanvas" count="1" width="350" height="150" ></canvas>
+    </div>
     <p class="center2">
     El porcentaje de aprobación, que es una fracción entre los comentarios positivos y los negativos tomados desde twitter para cada prestador.
     </p>
-
     </div>
 
 </template>
 
 <script>
 import Schart from 'vue-schart';
-    //import algo from './otro.js';
-
 
 export default {
 
@@ -50,31 +36,48 @@ export default {
         return {
 
             prestadores:[],
-            canvasId: 'myCanvas',
-            type: 'bar',
-            width: 1280,
-            height: 500,
-            labels: ['a','b','c'],
-            labels1:'Porcentaje de evaluacion positiva de las isapres y fonasa (%)',
-            data: [1,2,3,5],
-            mybackgroundcolor : ['rgba(0, 99, 132, 0.6)','rgba(0,88,88,0.1)'],
-            mybordercolor : ['rgba(0, 99, 132, 1)','rgba(0,192,192,1)']  ,
-            
-            options: {
-                title: 'PORCENTAJE DE APROBACION DE LOS PRESTADORES DE SALUD ',display: false,
-                bgColor: '#FFFFFF',//FONDO DEL GRAFICO
-            titleColor: '#212121',//titulo
-            fillColor: '  #4169E1', //barras
-            axisColor: '  #4169E1', // border del grafico(titulos eje x e y)
-            contentColor: ' #4169E1'//lineas del grafico
-            
-            },
-            //conditions: clearRect(0,myCanvas.width)
+            labels: [],
+            datos: [],
+            mybackgroundcolor : [],
+            mybordercolor : []  ,
         }
     },
     components:{
         Schart
     },
+    methods: {
+            startChart: function() {
+            var ctx = document.getElementById("mycanvas");
+            var myDoughnut = this.myChart =  new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: this.labels,
+                datasets: [{
+                    label: 'Porcentaje de evaluacion positiva de las isapres y fonasa (%)',
+                    data: this.datos,
+                    backgroundColor: this.mybackgroundcolor,
+                    borderColor: this.mybordercolor,
+                    borderWidth: 1
+                }]
+            },
+              options: {
+                responsive: true,
+                defaultFontColor: '#ffffff',        
+              }
+            });
+      },
+      getDatos: function(){
+            for (var i = this.prestadores.length - 1; i >= 0; i--) {
+                this.labels.push(this.prestadores[i].nombre);
+                this.datos.push(this.prestadores[i].positivas);
+                this.mybordercolor.push('rgba(54, 162, 235, 1)');
+                this.mybackgroundcolor.push('rgba(54, 162, 235, 0.2)');
+            }
+            console.log("labels",this.labels);
+            console.log("datos",this.datos);
+      }
+
+        },
 
     mounted:function(){
     console.log('Index.vue');
@@ -85,14 +88,14 @@ export default {
        // get body data
       this.prestadores = response.body;
      console.log('prestadores',this.prestadores);
+     this.getDatos();
+     this.startChart();
 
     }, response=>{
        // error callback
        console.log('error cargando los prestadores');
-    })
+    });
   }
-
-
 }
 </script>
 
