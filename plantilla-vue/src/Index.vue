@@ -10,26 +10,24 @@
 
     <ul class="prestador-list">
         <li v-for="u,i in prestadores.slice(0,1)">
-            <schart :canvasId="canvasId"
-                :type="type"
-                :width="width"
-                :height="height"
-                :data= "[
-                    {name: prestadores[0].nombre, value: prestadores[0].positivas},
-                    {name: prestadores[1].nombre, value: prestadores[1].positivas},
-                    {name: prestadores[2].nombre, value: prestadores[2].positivas},
-                    {name: prestadores[3].nombre, value: prestadores[3].positivas},
-                    {name: prestadores[4].nombre, value: prestadores[4].positivas},
-                    {name: prestadores[5].nombre, value: prestadores[5].positivas},
-                    
-
-                ]"
-                
-                :options="options"
-                :conditions="conditions"
-            ></schart>
+            
+            
         </li>
     </ul>
+<div class="center2">
+        <canvas id="mycanvas" count="1" width="350" height="150" >
+            
+        </canvas>
+        <chartjs-bar
+                    target="mycanvas" :labels="[prestadores[0].nombre,prestadores[1].nombre,prestadores[2].nombre,prestadores[3].nombre,prestadores[4].nombre,prestadores[5].nombre]" 
+                    :data="[prestadores[0].positivas,prestadores[1].positivas,prestadores[2].positivas,prestadores[3].positivas,prestadores[4].positivas,prestadores[5].positivas]"
+                    :datalabel="labels1"
+                    :backgroundcolor="mybackgroundcolor[0]"
+                    :borderWidth="2"
+            :bordercolor="mybordercolor[0]">
+                </chartjs-bar>
+</div>
+
 
     <p class="center2">
     El porcentaje de aprobación, que es una fracción entre los comentarios positivos y los negativos tomados desde twitter para cada prestador.
@@ -38,6 +36,7 @@
     </div>
 
 </template>
+
 <script>
 import Schart from 'vue-schart';
     //import algo from './otro.js';
@@ -55,6 +54,11 @@ export default {
             type: 'bar',
             width: 1280,
             height: 500,
+            labels: ['a','b','c'],
+            labels1:'Porcentaje de evaluacion positiva de las isapres y fonasa (%)',
+            data: [1,2,3,5],
+            mybackgroundcolor : ['rgba(0, 99, 132, 0.6)','rgba(0,88,88,0.1)'],
+            mybordercolor : ['rgba(0, 99, 132, 1)','rgba(0,192,192,1)']  ,
             
             options: {
                 title: 'PORCENTAJE DE APROBACION DE LOS PRESTADORES DE SALUD ',display: false,
@@ -80,7 +84,8 @@ export default {
     .then(response=>{
        // get body data
       this.prestadores = response.body;
-     console.log('prestadores',this.prestadores)
+     console.log('prestadores',this.prestadores);
+
     }, response=>{
        // error callback
        console.log('error cargando los prestadores');
