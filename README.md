@@ -14,22 +14,22 @@ Incluye:
 * instalar dependencias de node `npm install`
 * ejecutar `npm run dev`
 * generar distribuible `npm run build`
-* SOLO UNA VES, Install [gjslint](https://developers.google.com/closure/utilities/docs/linter_howto?hl=en).
-
 
 ## Recuerden instalar ademas para nuestro proyecto
 
 
-* En carpeta previsor que es la principal instalar:
-* Para los graficos que coloco el victor depedencia 1: npm install -g vue-cli
+* En la carpeta Previsor_frontend, que es la carpeta principal, instalar:
+* Para los graficos que coloco el victor, depedencia 1: npm install -g vue-cli
 
+* En Plantilla-vue instalar tres dependencias mas:
 
+* Para ver los tweets se necesita, dependencia2: npm install vue-tweet-embed
+* Para los graficos que coloco el victor ,depedencia 3: npm install chart.js chartkick hchs-vue-charts vue-chartjs vue-chartkick
+* Para ver el pop-up(ventana) donde se muestra el tweet en el grafo de redSocial, dependencia 4: npm install vue-js-modal --save
 
-* En Plantilla-vue instalar dos dependencias mas:
+* Luego de todo esto, para ver el grafo de redSocial con el D3:
+* 1) En previsor_frontend existe una carpeta llamada d3.
+* 2) Hay que cortarla (ctrl-X) y acceder a : plantilla-vue/node_modules
+* 3) Pegarla en esta carpeta.
 
-* Para ver los tweets se necesita: npm install vue-tweet-embed
-* Para los graficos que coloco el victor ,depedencia 2: npm install chart.js chartkick hchs-vue-charts vue-chartjs vue-chartkick
-
-* Luego de todo esto para ver el grafo:
-* en previsor_frontend cortar la carpeta carpeta Sigmajs y pegarla dentro de node_modules de la carpeta plantilla-vue (quedando plantilla-vue/node_modules/sigmajs), finalmente hacer 'npm install' dentro de la carpeta sigma. 
 

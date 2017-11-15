@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import VModal from 'vue-js-modal'
 import Index from './Index.vue';
-import GraficoIsapre from './GraficoComparadorAprobIsapre.vue';
 import Demo from './valoraciones.vue';
 import admin from './admin.vue';
 import comparacion from './Comparacion.vue';
@@ -19,11 +19,11 @@ import 'hchs-vue-charts'
 
 Vue.use(window.VueCharts)
 //-------------------------------------------
+Vue.use(VModal);
 Vue.use(VueRouter);
 Vue.use(VueResource);
 const routes = [
   { path: '/index', alias: '/', component: Index},
-  { path:'/grafic',component: GraficoIsapre},
   { path:'/uno', component: Demo},
   { path:'/admin', component: admin},
   { path:'/comparacion', component: comparacion},
