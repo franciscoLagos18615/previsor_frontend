@@ -6,6 +6,7 @@ import Demo from './valoraciones.vue';
 import admin from './admin.vue';
 import comparacion from './Comparacion.vue';
 import red from './redSocial.vue';
+import mapaCiudad from './mapaOrdenadoPorCiudad.vue';
 
 import VueResource from 'vue-resource';
 //import VueCharts.core from 'otro.js';
@@ -17,17 +18,19 @@ import App from './App.vue';
 import 'chart.js'
 import 'hchs-vue-charts'
 
+
+
 Vue.use(window.VueCharts)
 //-------------------------------------------
 Vue.use(VueRouter);
 Vue.use(VueResource);
 const routes = [
   { path: '/index', alias: '/', component: Index},
-  { path:'/grafic',component: GraficoIsapre},
   { path:'/uno', component: Demo},
   { path:'/admin', component: admin},
   { path:'/comparacion', component: comparacion},
-  { path:'/redSocial', component: red}
+  { path:'/redSocial', component: red},
+  { path:'/mapasPorCiudad',component: mapaCiudad}
 
 ]
 
@@ -35,6 +38,7 @@ const routes = [
 const router = new VueRouter({
   routes
 })
+
 
 new Vue({
   el: '#app',

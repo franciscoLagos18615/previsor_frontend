@@ -41,7 +41,7 @@
 </div>
 
 <!-- TWEETS -->
-<div v-if="selected != ''">
+<div  v-if="selected != ''">
   <div v-if="clave == true">
   <h3>Tweets</h3>
 

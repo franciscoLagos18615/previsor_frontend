@@ -25,7 +25,7 @@ Incluye:
 
 
 
-* En Plantilla-vue instalar dos dependencias mas:
+* En Plantilla-vue instalar estas dependencias :
 
 * Para ver los tweets se necesita: npm install vue-tweet-embed
 * Para los graficos que coloco el victor ,depedencia 2: npm install chart.js chartkick hchs-vue-charts vue-chartjs vue-chartkick
@@ -33,3 +33,7 @@ Incluye:
 * Luego de todo esto para ver el grafo:
 * en previsor_frontend cortar la carpeta carpeta Sigmajs y pegarla dentro de node_modules de la carpeta plantilla-vue (quedando plantilla-vue/node_modules/sigmajs), finalmente hacer 'npm install' dentro de la carpeta sigma. 
 
+* PARA MAPA 
+
+* npm install axios --save
+* npm install vue-choropleth --save
