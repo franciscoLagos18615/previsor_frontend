@@ -19,22 +19,24 @@
 </div>
 
 	</tr>
+	<tr>
+	<div id="centerDiv">
+
+	<select v-on:click="hacerFalse()" v-model="selected">
+	    <option disabled value="">Seleccione un Prestador</option>
+	                <option v-for="prestador in prestadores" :value='prestador.prestadorId'>{{prestador.nombre}}</option>
+	</select>
+	<button v-on:click="hacerTrue()">Consultar</button>
+	</div>
+
+	</tr>
 
 	<tr>
 
-		<select v-on:click="hacerFalse()" v-model="selected">
-		    <option disabled value="">Seleccione un Prestador</option>
-		                <option v-for="prestador in prestadores" :value='prestador.prestadorId'>{{prestador.nombre}}</option>
-		</select>
-
-		<button v-on:click="hacerTrue()">Consultar</button>
-	</tr>
-  	<tr>
-			<div v-if="selected != ''">
-			  <div v-if="clave == true">
-
-	<app-graphic> </app-graphic>
-</div>
+	<div v-if="selected != ''">
+	  <div v-if="clave == true">
+	<app-grafoUnico> </app-grafoUnico>
+	</div>
 </div>
 	</tr>
 
@@ -56,15 +58,12 @@
 </template>
 
 <script>
-	import Schart from 'vue-schart';
-    import sigma from 'sigmajs'
-import graph from './grafoUnico.vue'
+    import grafo from './grafoUnico.vue'
 
 	export default {
 		name: 'comparacion',
 		components:{
-       		'SigmaJs':sigma,
-           'app-graphic': graph
+       		'app-grafoUnico':grafo,
     	},
 		props: {
 
@@ -73,55 +72,49 @@ import graph from './grafoUnico.vue'
 			return{
 				selected: '',
 				clave: false,
-				dato:'',
-				labels: ['Positivos', 'Negativos','Neutros'],
-				data: [1,2,3],
-				data2:[3,4,5],
-				nodos: [],
-				twits:[],
-				nodos:[],
-				valoraciones: [],
-          prestadores:[],
-				mybackgroundcolor : ['rgba(75,0,192,0.1)','rgba(0,88,88,0.1)'],
-        mybordercolor : ['rgba(75,192,192,1)','rgba(0,192,192,1)']
-
+				prestadores:[],
 			}
 		},
 		methods: {
-			indiceDe: function(nombre){
-				for (var i = 1; i < this.prestadores.length; i++){container
-  				if (this.prestadores[i].nombre == nombre){
-				     return i;
-				  }
-				return 69;
-				}
+			hacerTrue:function(){
+				 this.clave = true;
+				 console.log(this.selected);
+				 console.log(this.clave);
 			},
-			busqueda:function(idABuscar){
-			console.log('estoy aqui');
-
-
-		},
 			hacerFalse:function(){
 				console.log(this.selected);
 				console.log(this.clave);
 			 this.clave = false;
-		 },
-hacerTrue:function(){
-	 this.clave = true;
-	 console.log(this.selected);
-	 console.log(this.clave);
-	 //this.creaTweets();
-}
+			}
 
 		},
 		computed: {
 		},
-	    mounted:function(){
-			this.$http.get('http://localhost:8082/previsor-back/prestador') //Retorna prestadores
+	  mounted:function(){
+			this.$http.get('http://localhost:8082/previsor-back/prestador/')
 			.then(response=>{
 					this.prestadores = response.body;
-					console.log('primer',this.prestadores);
 
+					console.log('primer3.5',this.prestadores);
+
+					var canvas = document.getElementById("circlecanvas");
+					var context = canvas.getContext("2d");
+					context.arc(20, 20, 20, 0, Math.PI * 2, false);
+					context.fillStyle = "#f0e837";
+					context.fill()
+
+					var canvas = document.getElementById("circlecanvas2");
+					var context = canvas.getContext("2d");
+					context.arc(20, 20, 20, 0, Math.PI * 2, false);
+					context.fillStyle = "#4e9a4e";
+					context.fill()
+
+					var canvas = document.getElementById("circlecanvas3");
+					var context = canvas.getContext("2d");
+					context.arc(20, 20, 20, 0, Math.PI * 2, false);
+					context.fillStyle = "#ec5148";
+					context.fill()
+					// Let's first
 			}, response=>{
 				 console.log('error cargando los prestadores');
 			});
@@ -146,13 +139,6 @@ ul.centerUL {
 			 text-align: center;
 	 }
 
-.contenedor {
-    max-width: 800px;
-    height: 500px;
-    margin: auto;
-		 background-color: white;
-
-  }
 table {
     border-collapse: collapse;
     border-style: hidden;
