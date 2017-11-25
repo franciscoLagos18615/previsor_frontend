@@ -1,189 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6f60aa1-578c-4a54-a231-bfe112959f82" name="Default" comment="se agrega el grafico principal con los cambios">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plantilla-vue/src/GraficoComparadorAprobIsapre.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plantilla-vue/src/ViendoTweeter.vue" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/CONTRIBUTING.draft.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/add-node-on-click.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/animate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/api-candy.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/basic.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/custom-edge-renderer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/custom-node-renderer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/data/arctic.gexf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/data/arctic.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/data/geolocalized.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/data/moroccan-ediaspora.gexf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/data/standard_graph.gexf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/drag-nodes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/edge-renderers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/events.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/filters.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/force.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/img/img1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/img/img2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/img/img3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/img/img4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/lib/jquery-2.1.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/load-external-gexf.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/load-external-json.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/load-neo4j-cypher-query.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/neighborhoods-plugin.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/noverlap.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/parallel-edges.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/plugin-customEdgeShapes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/plugin-customShapes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/plugin-edgeDots.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/plugin-snapshot.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/scrollable-page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/share-camera.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/svg-export.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/svg-freestyle-renderer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/examples/svg-renderer.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.exporters.svg/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.exporters.svg/sigma.exporters.svg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.layout.forceAtlas2/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.layout.forceAtlas2/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.layout.forceAtlas2/supervisor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.layout.forceAtlas2/tasks/forceAtlas2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.layout.forceAtlas2/worker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.layout.noverlap/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.layout.noverlap/sigma.layout.noverlap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.neo4j.cypher/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.neo4j.cypher/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.neo4j.cypher/sigma.neo4j.cypher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.parsers.gexf/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.parsers.gexf/gexf-parser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.parsers.gexf/sigma.parsers.gexf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.parsers.json/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.parsers.json/sigma.parsers.json.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.pathfinding.astar/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.pathfinding.astar/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.pathfinding.astar/sigma.pathfinding.astar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.plugins.animate/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.plugins.animate/sigma.plugins.animate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.plugins.dragNodes/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.plugins.dragNodes/sigma.plugins.dragNodes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.plugins.filter/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.plugins.filter/sigma.plugins.filter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.plugins.neighborhoods/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.plugins.neighborhoods/sigma.plugins.neighborhoods.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.plugins.relativeSize/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.plugins.relativeSize/sigma.plugins.relativeSize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.customEdgeShapes/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.dashed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.dotted.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.parallel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edgehovers.tapered.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.dashed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.dotted.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.parallel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.customEdgeShapes/sigma.canvas.edges.tapered.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.customShapes/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.customShapes/shape-library.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.customShapes/sigma.renderers.customShapes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.edgeDots/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.edgeDots/sigma.canvas.edges.dotCurve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.edgeDots/sigma.canvas.edges.dotCurvedArrow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.edgeLabels/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.edgeLabels/settings.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.edgeLabels/sigma.canvas.edges.labels.curve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.edgeLabels/sigma.canvas.edges.labels.curvedArrow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.edgeLabels/sigma.canvas.edges.labels.def.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.parallelEdges/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.parallelEdges/sigma.canvas.edgehovers.curve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.parallelEdges/sigma.canvas.edgehovers.curvedArrow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.parallelEdges/sigma.canvas.edges.curve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.parallelEdges/sigma.canvas.edges.curvedArrow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.parallelEdges/sigma.canvas.edges.labels.curve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.parallelEdges/utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.snapshot/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.renderers.snapshot/sigma.renderers.snapshot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/plugins/sigma.statistics.HITS/sigma.statistics.HITS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/captors/sigma.captors.mouse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/captors/sigma.captors.touch.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/classes/sigma.classes.camera.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/classes/sigma.classes.configurable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/classes/sigma.classes.dispatcher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/classes/sigma.classes.edgequad.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/classes/sigma.classes.graph.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/classes/sigma.classes.quad.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/conrad.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/middlewares/sigma.middlewares.copy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/middlewares/sigma.middlewares.rescale.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/misc/sigma.misc.animation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/misc/sigma.misc.bindDOMEvents.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/misc/sigma.misc.bindEvents.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/misc/sigma.misc.drawHovers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/canvas/sigma.canvas.edgehovers.arrow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/canvas/sigma.canvas.edgehovers.curve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/canvas/sigma.canvas.edgehovers.curvedArrow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/canvas/sigma.canvas.edgehovers.def.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/canvas/sigma.canvas.edges.arrow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/canvas/sigma.canvas.edges.curve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/canvas/sigma.canvas.edges.curvedArrow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/canvas/sigma.canvas.edges.def.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/canvas/sigma.canvas.extremities.def.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/canvas/sigma.canvas.hovers.def.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/canvas/sigma.canvas.labels.def.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/canvas/sigma.canvas.nodes.def.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/sigma.renderers.canvas.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/sigma.renderers.def.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/sigma.renderers.svg.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/sigma.renderers.webgl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/svg/sigma.svg.edges.curve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/svg/sigma.svg.edges.def.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/svg/sigma.svg.hovers.def.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/svg/sigma.svg.labels.def.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/svg/sigma.svg.nodes.def.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/svg/sigma.svg.utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/webgl/sigma.webgl.edges.arrow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/webgl/sigma.webgl.edges.def.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/webgl/sigma.webgl.edges.fast.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/webgl/sigma.webgl.edges.thickLine.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/webgl/sigma.webgl.edges.thickLineCPU.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/webgl/sigma.webgl.edges.thickLineGPU.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/webgl/sigma.webgl.nodes.def.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/renderers/webgl/sigma.webgl.nodes.fast.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/sigma.core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/sigma.export.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/sigma.settings.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/utils/sigma.polyfills.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/src/utils/sigma.utils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/test/qunit/qunit.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/test/qunit/qunit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/test/unit.HITS.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/test/unit.animation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/test/unit.camera.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/test/unit.configurable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/test/unit.core.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/test/unit.dispatcher.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/test/unit.edgequad.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/test/unit.graph.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/test/unit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/test/unit.plugins.filter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/test/unit.quad.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sigmajs/test/unit.utils.js" afterPath="" />
+    <list default="true" id="c6f60aa1-578c-4a54-a231-bfe112959f82" name="Default" comment="agrega mapa coropletico, falta cambiar tonalidades y detalles">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plantilla-vue/src/mapaOrdenadoPorCiudad.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plantilla-vue/dist/index.html" afterPath="$PROJECT_DIR$/plantilla-vue/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plantilla-vue/dist/scripts.js" afterPath="$PROJECT_DIR$/plantilla-vue/dist/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plantilla-vue/package.json" afterPath="$PROJECT_DIR$/plantilla-vue/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plantilla-vue/src/App.vue" afterPath="$PROJECT_DIR$/plantilla-vue/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plantilla-vue/src/index.html" afterPath="$PROJECT_DIR$/plantilla-vue/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plantilla-vue/src/main.js" afterPath="$PROJECT_DIR$/plantilla-vue/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plantilla-vue/src/redSocial.vue" afterPath="$PROJECT_DIR$/plantilla-vue/src/redSocial.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plantilla-vue/src/style.scss" afterPath="$PROJECT_DIR$/plantilla-vue/src/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plantilla-vue/src/valoraciones.vue" afterPath="$PROJECT_DIR$/plantilla-vue/src/valoraciones.vue" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -194,11 +14,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Index.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Index.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plantilla-vue/src/Index.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
               <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plantilla-vue/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -289,6 +119,669 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/plantilla-vue/src/main.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/plantilla-vue/src/redSocial.vue</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/chile.geojson</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/chile2.geojson</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/.gitattributes</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/.gitignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/.npmignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/.spmignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/CONTRIBUTING.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/bin/meteor</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/bin/start</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/bin/uglify</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/composer.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/d3.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/d3.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/lib/colorbrewer/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/lib/colorbrewer/colorbrewer.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/lib/colorbrewer/colorbrewer.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/lib/geographiclib/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/lib/penner/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/lib/polymaps/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/lib/protovis/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/lib/rhill-voronoi/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/lib/science/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/lib/science/science.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/lib/science/science.lin.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/lib/science/science.lin.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/lib/science/science.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/lib/science/science.stats.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/lib/science/science.stats.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/package.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/ascending.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/bisect.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/descending.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/deviation.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/entries.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/extent.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/keys.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/map.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/max.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/mean.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/median.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/merge.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/nest.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/pairs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/permute.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/quantile.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/range.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/set.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/shuffle.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/sum.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/transpose.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/values.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/variance.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/arrays/zip.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/behavior/behavior.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/behavior/drag.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/behavior/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/behavior/zoom.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/color/color.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/color/hcl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/color/hsl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/color/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/color/lab.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/color/rgb.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/color/xyz.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/compat/array.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/compat/date.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/compat/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/compat/style.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/core/array.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/core/class.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/core/document.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/core/functor.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/core/identity.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/core/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/core/noop.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/core/ns.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/core/rebind.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/core/source.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/core/subclass.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/core/target.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/core/true.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/core/vendor.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/core/zero.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/d3.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/dsv/csv.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/dsv/dsv.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/dsv/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/dsv/tsv.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/end.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/event/dispatch.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/event/drag.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/event/event.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/event/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/event/mouse.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/event/timer.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/event/touch.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/event/touches.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/format/collapse.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/format/format.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/format/formatPrefix.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/format/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/format/precision.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/format/requote.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/format/round.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/albers-usa.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/albers.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/area.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/azimuthal-equal-area.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/azimuthal-equidistant.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/azimuthal.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/bounds.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/cartesian.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/centroid.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/circle.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/clip-antimeridian.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/clip-circle.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/clip-extent.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/clip-polygon.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/clip.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/compose.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/conic-conformal.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/conic-equal-area.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/conic-equidistant.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/conic.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/distance.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/equirectangular.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/geo.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/gnomonic.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/graticule.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/greatArc.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/interpolate.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/length.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/mercator.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/orthographic.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/path-area.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/path-bounds.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/path-buffer.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/path-centroid.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/path-context.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/path.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/point-in-polygon.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/projection.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/resample.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/rotation.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/spherical.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/stereographic.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/stream.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/transform.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geo/transverse-mercator.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/clip-line.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/delaunay.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/geom.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/hull.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/point.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/polygon.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/quadtree.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/voronoi.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/voronoi/beach.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/voronoi/cell.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/voronoi/circle.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/voronoi/clip.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/voronoi/edge.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/voronoi/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/geom/voronoi/red-black.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/interpolate/array.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/interpolate/ease.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/interpolate/hcl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/interpolate/hsl.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/interpolate/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/interpolate/interpolate.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/interpolate/lab.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/interpolate/number.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/interpolate/object.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/interpolate/rgb.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/interpolate/round.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/interpolate/string.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/interpolate/transform.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/interpolate/uninterpolate.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/interpolate/zoom.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/layout/bundle.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/layout/chord.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/layout/cluster.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/layout/force.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/layout/hierarchy.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/layout/histogram.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/layout/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/layout/layout.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/layout/pack.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/layout/partition.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/layout/pie.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/layout/stack.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/layout/tree.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/layout/treemap.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/ca-ES.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/de-CH.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/de-DE.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/en-CA.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/en-GB.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/en-US.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/es-ES.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/fi-FI.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/fr-CA.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/fr-FR.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/he-IL.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/hu-HU.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/it-IT.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/ja-JP.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/ko-KR.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/locale.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/mk-MK.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/nl-NL.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/number-format.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/pl-PL.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/pt-BR.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/ru-RU.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/sv-SE.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/time-format.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/time-scale.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/locale/zh-CN.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/math/abs.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/math/adder.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/math/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/math/number.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/math/random.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/math/transform.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/math/trigonometry.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/scale/bilinear.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/scale/category.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/scale/identity.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/scale/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/scale/linear.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/scale/log.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/scale/nice.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/scale/ordinal.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/scale/polylinear.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/scale/pow.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/scale/quantile.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/scale/quantize.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/scale/scale.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/scale/sqrt.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/scale/threshold.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/append.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/attr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/call.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/classed.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/data.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/datum.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/each.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/empty.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/enter-insert.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/enter-select.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/enter.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/filter.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/html.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/insert.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/interrupt.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/node.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/on.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/order.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/property.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/remove.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/select.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/selectAll.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/selection.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/size.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/sort.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/style.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/text.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/selection/transition.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/start.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/svg/arc.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/svg/area-radial.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/svg/area.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/svg/axis.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/svg/brush.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/svg/chord.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/svg/diagonal-radial.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/svg/diagonal.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/svg/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/svg/line-radial.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/svg/line.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/svg/svg.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/svg/symbol.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/time/day.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/time/format-iso.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/time/format-utc.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/time/format.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/time/hour.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/time/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/time/interval.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/time/minute.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/time/month.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/time/scale-utc.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/time/scale.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/time/second.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/time/time.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/time/week.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/time/year.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/transition/attr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/transition/delay.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/transition/duration.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/transition/each.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/transition/ease.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/transition/filter.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/transition/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/transition/remove.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/transition/select.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/transition/selectAll.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/transition/style.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/transition/subtransition.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/transition/text.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/transition/transition.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/transition/tween.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/xhr/html.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/xhr/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/xhr/json.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/xhr/text.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/xhr/xhr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/src/xhr/xml.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/XMLHttpRequest.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/ascending-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/bisect-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/descending-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/deviation-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/entries-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/extent-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/keys-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/map-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/max-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/mean-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/median-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/merge-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/min-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/nest-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/one-time-number.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/pairs-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/permute-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/quantile-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/range-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/set-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/shuffle-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/sum-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/transpose-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/values-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/variance-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/arrays/zip-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/assert.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/color/hcl-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/color/hsl-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/color/lab-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/color/rgb-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/core/document-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/core/functor-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/core/ns-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/core/rebind-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/core/version-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/data/ocean.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/data/sample.csv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/data/sample.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/data/sample.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/data/sample.tsv</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/data/sample.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/data/sample.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/data/us-counties.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/data/world-countries.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/dsv/csv-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/dsv/tsv-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/event/dispatch-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/event/mouse-test.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/event/timer-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/event/touch-test.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/format/format-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/format/formatPrefix-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/format/requote-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/format/round-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/albers-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/albers-usa-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/area-benchmark.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/area-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/azimuthal-equal-area-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/azimuthal-equidistant-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/bounds-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/centroid-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/circle-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/clip-extent-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/conic-conformal-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/conic-equal-area-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/conic-equidistant-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/distance-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/equirectangular-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/gnomonic-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/graticule-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/greatArc-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/interpolate-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/length-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/mercator-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/orthographic-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/path-benchmark</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/path-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/point-in-polygon-mock.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/point-in-polygon-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/projection-test-suite.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/projection-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/rotation-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/stereographic-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/stream-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geo/transverse-mercator-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geom/hull-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geom/polygon-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geom/quadtree-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geom/voronoi-benchmark</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/geom/voronoi-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/index-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/interpolate/array-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/interpolate/ease-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/interpolate/hcl-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/interpolate/hsl-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/interpolate/interpolate-string-benchmark</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/interpolate/interpolate-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/interpolate/interpolate-transform-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/interpolate/lab-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/interpolate/number-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/interpolate/object-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/interpolate/rgb-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/interpolate/round-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/interpolate/string-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/layout/chord-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/layout/cluster-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/layout/force-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/layout/hierarchy-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/layout/histogram-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/layout/pack-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/layout/partition-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/layout/pie-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/layout/tree-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/layout/treemap-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/load.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/locale/locale-caes-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/locale/locale-fifi-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/locale/locale-huhu-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/locale/locale-ptbr-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/locale/locale-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/locale/locale-zhcn-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/math/random-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/math/transform-null-matrix-test.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/math/transform-null-test.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/math/transform-rotate-origin-test.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/math/transform-rotate-test.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/math/transform-test.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/scale/category-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/scale/identity-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/scale/linear-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/scale/log-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/scale/ordinal-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/scale/pow-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/scale/quantile-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/scale/quantize-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/scale/sqrt-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/scale/threshold-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/append-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/attr-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/call-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/classed-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/data-benchmark.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/data-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/datum-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/each-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/empty-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/enter-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/filter-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/html-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/insert-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/interrupt-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/node-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/on-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/order-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/property-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/remove-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/select-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/selectAll-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/selection-select-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/selection-selectAll-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/selection-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/size-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/sort-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/style-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/selection/text-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/start.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/svg/arc-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/svg/area-radial-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/svg/area-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/svg/axis-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/svg/brush-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/svg/diagonal-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/svg/line-radial-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/svg/line-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/svg/symbol-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/day-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/dayOfYear-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/days-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/format-iso-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/format-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/format-utc-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/hour-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/hours-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/minute-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/minutes-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/month-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/months-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/scale-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/second-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/seconds-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/time.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/week-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/weeks-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/year-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/time/years-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-attr.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-attrTween.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-call.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-delay.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-duration.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-each.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-filter.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-id.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-node.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-remove.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-select.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-selectAll.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-size.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-style.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-styleTween.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-text.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-time.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-transition.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test-tween.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/transition/transition-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/xhr/html-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/xhr/json-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/xhr/text-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/xhr/xhr-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/d3/test/xhr/xml-test.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/plantilla-vue/src/grafoUnico.vue</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/santiago.geojson</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -398,7 +891,7 @@
       <workItem from="1510011307955" duration="4154000" />
       <workItem from="1510027213901" duration="681000" />
       <workItem from="1511540661881" duration="1468000" />
-      <workItem from="1511615438621" duration="281000" />
+      <workItem from="1511615438621" duration="486000" />
     </task>
     <task id="LOCAL-00001" summary="se agrega el grafico principal con los cambios">
       <created>1510018286244</created>
@@ -407,14 +900,22 @@
       <option name="project" value="LOCAL" />
       <updated>1510018286244</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="agrega mapa coropletico, falta cambiar tonalidades y detalles">
+      <created>1511615774737</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1511615774737</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7004000" />
+    <option name="totallyTimeSpent" value="7209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -452,7 +953,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="se agrega el grafico principal con los cambios" />
-    <option name="LAST_COMMIT_MESSAGE" value="se agrega el grafico principal con los cambios" />
+    <MESSAGE value="agrega mapa coropletico, falta cambiar tonalidades y detalles" />
+    <option name="LAST_COMMIT_MESSAGE" value="agrega mapa coropletico, falta cambiar tonalidades y detalles" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -501,6 +1003,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plantilla-vue/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
           <folding />
         </state>
       </provider>
