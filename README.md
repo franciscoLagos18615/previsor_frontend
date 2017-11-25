@@ -30,7 +30,7 @@ Incluye:
 * Para el mapa en general, dependencia 6: npm install leaflet
 * Para ver el mapa cloropletico (mapa de calor en si), dependencia 7: npm install vue-choropleth --save
 * Dependencia que usa vue-choropleth, dependencia 8: npm install vue2-leaflet --save
-* Para ver el mapa cloropletico (estetica,zoom,colores,etc), dependencia 7: npm install axios --save
+* Para ver el mapa cloropletico (estetica,zoom,colores,etc), dependencia 9: npm install axios --save
 
 * Luego de todo esto, para ver el grafo de redSocial con el D3:
 * 1) En previsor_frontend existe una carpeta llamada d3.
