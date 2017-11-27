@@ -66,19 +66,23 @@
 			},
 			checkboxToggle: function(){
 				if(this.selected.length == 2){
+
 					this.labels[0] = this.prestadores[this.selected[0]-1].nombre;
 					this.labels[1] = this.prestadores[this.selected[1]-1].nombre;
 
-					for (var i = this.valoracionesIndexadas[this.selected[0]-1].length - 1; i >= 0; i--) {
-						this.datosPositivos[0] = this.datosPositivos[0] + this.valoracionesIndexadas[this.selected[0]-1][i].positivas;
-						this.datosNegativos[0] = this.datosNegativos[0] + this.valoracionesIndexadas[this.selected[0]-1][i].negativas;
-						this.datosNeutrales[0] = this.datosNeutrales[0] + this.valoracionesIndexadas[this.selected[0]-1][i].neutrales;
+					for (var i = this.valoracionesIndexadas.length - 1; i >= 0; i--) {
+						if(this.valoracionesIndexadas[i].idPrestador == this.selected[0]){
+							this.datosPositivos[0] = this.valoracionesIndexadas[i].positivas
+							this.datosNegativos[0] = this.valoracionesIndexadas[i].negativas
+							this.datosNeutrales[0] = this.valoracionesIndexadas[i].neutras
+						}
+						if(this.valoracionesIndexadas[i].idPrestador == this.selected[1]){
+							this.datosPositivos[1] = this.valoracionesIndexadas[i].positivas
+							this.datosNegativos[1] = this.valoracionesIndexadas[i].negativas
+							this.datosNeutrales[1] = this.valoracionesIndexadas[i].neutras
+						}
 					}
-					for (var i = this.valoracionesIndexadas[this.selected[1]-1].length - 1; i >= 0; i--) {
-						this.datosPositivos[1] = this.datosPositivos[1] + this.valoracionesIndexadas[this.selected[1]-1][i].positivas;
-						this.datosNegativos[1] = this.datosNegativos[1] + this.valoracionesIndexadas[this.selected[1]-1][i].negativas;
-						this.datosNeutrales[1] = this.datosNeutrales[1] + this.valoracionesIndexadas[this.selected[1]-1][i].neutrales;
-					}
+
 					this.myChart.update();
 				}
 			},
@@ -91,15 +95,15 @@
                 datasets: [{
                     label: 'positivos',
                     data: this.datosPositivos,
-                    backgroundColor: ['rgba(54, 162, 235, 0.2)'],
-                    borderColor: ['rgba(54, 162, 235, 1)'],
+                    backgroundColor: ['rgba(54, 162, 235, 0.2)','rgba(54, 162, 235, 0.2)'],
+                    borderColor: ['rgba(54, 162, 235, 1)','rgba(54, 162, 235, 1)'],
                     borderWidth: 1
                 },
                 {
                     label: 'negativos',
                     data: this.datosNegativos,
-                    backgroundColor: ['rgba(255, 99, 132, 0.2)'],
-                    borderColor: ['rgba(255,99,132,1)'],
+                    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(255, 99, 132, 0.2)'],
+                    borderColor: ['rgba(255,99,132,1)','rgba(255,99,132,1)'],
                     borderWidth: 1
                 },
                 {
@@ -125,12 +129,7 @@
 	    .then(response=>{
 	      this.prestadores = response.body;
 	     console.log('prestadores',this.prestadores);
-
-	     for (var i = this.prestadores.length - 1; i >= 0; i--) {
-         this.valoracionesIndexadas.push(this.prestadores[i].valoraciones);
-      	 }
       
-      console.log('valoracionesIndexadas',this.valoracionesIndexadas);
 	    }, response=>{
 	       console.log('error cargando los prestadores');
 	    });
@@ -140,6 +139,13 @@
 	     console.log('valoraciones',this.valoraciones);
 	    }, response=>{
 	       console.log('error cargando las valoraciones');
+	    });
+	    this.$http.get('http://localhost:8082/previsor-back/valoracion/fromprestador')
+	    .then(response=>{
+	      this.valoracionesIndexadas = response.body;
+	     console.log('valoracionesIndexadas',this.valoracionesIndexadas);
+	    }, response=>{
+	       console.log('error cargando las valoraciones indexadas');
 	    });
 	    this.startChart();
 		}
