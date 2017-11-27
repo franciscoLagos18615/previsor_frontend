@@ -13,7 +13,7 @@
           <button id="buttonEscape" @click="$modal.hide('tweet')">
             x
           </button>
-        <component-view :id="'920293223519617031'"></component-view>
+        <component-view :id=tweet></component-view>
 
 
 
@@ -36,11 +36,17 @@ export default {
         'component-view': Tweet,
     },
   props: {
+      nPrestador:{
+        type: Number,
+        required: true
 
+
+      }
   },
 
   data(){
     return{
+      tweet:'',
       nodos:[],
       twits:[],
       toggle: 0,
@@ -51,14 +57,22 @@ export default {
   },
   methods: {
 
-  method:function(){
-    console.log('hola');
+  method:function(d){
+    this.show();
   },
 
 
   show (unvar) {
   console.log(unvar);
-      this.$modal.show('tweet');
+
+    console.log(unvar)
+    if(unvar.tipo != 1){
+
+      this.tweet = (unvar.idTweet).toString();
+      console.log(this.tweet);
+
+        this.$modal.show('tweet');
+    }
     },
     hide () {
       this.$modal.hide('tweet');
@@ -76,57 +90,24 @@ export default {
   computed: {
   },
     mounted:function(){
-
-    this.$http.get('http://localhost:8082/previsor-back/prestador/')
+    var n =(this.nPrestador).toString();
+    this.$http.get('http://localhost:8082/previsor-back/graph/'+n)
     .then(response=>{
         this.nodos = response.body;
-        this.$http.get('http://localhost:8082/previsor-back/prestador/')
-        .then(response=>{
 
-        this.twits = response.body;
 
-        var nodes = this.nodos;
-        var tuits = this.twits
+        var graph = this.nodos;
+        console.log(graph);
 
         this.toggle = 0;
         var w = 640;
           var h = 500;
-          var dataset = {
-            nodes:[
-                {name:"Adam", "alias":"James", "color":"black"},
-                {name:"Bob", "alias":"James2", "color":"green"},
-                {name:"Carrie", "alias":"James3", "color":"red"},
-                {name:"Donovan", "alias":"James4", "color":"blue"},
-                {name:"Edward", "alias":"James5", "color":"yellow"},
-                {name:"Felicity", "alias":"James6", "color":"orange"},
-                {name:"George", "alias":"James7", "color":"purple"},
-                {name:"Hannah", "alias":"James8", "color":"lightblue"},
-                {name:"Iris", "alias":"James9", "color":"cyan"},
-                {name:"Jerry", "alias":"James10", "color":"grey"}
-            ],
-            edges:[
-                {source: 0, target: 1},
-                {source: 0, target: 2},
-                {source: 0, target: 3},
-                {source: 0, target: 4},
-                {source: 1, target: 5},
-                {source: 2, target: 5},
-                {source: 2, target: 5},
-                {source: 3, target: 4},
-                {source: 5, target: 8},
-                {source: 5, target: 9},
-                {source: 6, target: 7},
-                {source: 7, target: 8},
-                {source: 8, target: 9},
-
-            ]
-          };
           var force = d3.layout.force()
-                      .nodes(dataset.nodes)
-                      .links(dataset.edges)
+                      .nodes(graph.nodes)
+                      .links(graph.edges)
                       .size([w, h])
                       .linkDistance([100])
-                      .charge([-150])
+                      .charge([-500])
                       .start();
 
 
@@ -135,47 +116,130 @@ export default {
               width = +svg.attr("width"),
               height = +svg.attr("height");
           var edges = svg.selectAll("line")
-                  .data(dataset.edges)
+                  .data(graph.edges)
                   .enter()
                   .append("line")
                   .style("stroke", "#777")
-                  .style("stroke-width", 2);
+                  .style("stroke-width", 1);
           var nodes = svg.selectAll("circle")
-                  .data(dataset.nodes)
+                  .data(graph.nodes)
                   .enter()
                   .append("circle")
-                  .attr('r', function (d) { return (d.weight*w*0.01); })
+                  .attr('r', function (d) {
+                    if(d.tipo == 2){
+                      if(d.lvl > 100000){
+                        return (d.lvl*0.00001);
+                      }
+                      else if(d.lvl <= 100000 && d.lvl > 10000){
+                        return (d.lvl*0.0001);
+
+
+
+                      }
+                      else if(d.lvl <= 10000 && d.lvl > 400){
+
+                        return (d.lvl*0.01);
+
+                      }
+                      else{
+                        return (d.lvl*0.1);
+
+                      }
+
+
+                      }
+                    else if(d.tipo == 1){
+                      return 15;
+
+
+                    }
+                    else {
+                      return 5;
+                    }
+
+                  })
                   .style("fill", function(d, i){
-                    return colors(i);
+                    if(d.tipo ==1){
+                      if(d.ranking < 5000){
+                        return "#f0e837";
+                      }
+                      else if(d.ranking >= 5000 && d.ranking < 10000){
+                        return  "#4e9a4e";
+                      }
+                      else{
+                        return "#ec5148";
+                      }
+
+
+                    }
+                    else if(d.tipo == 2){
+                       return "lightblue";
+                    }
+                    else{
+                      return "blue";
+
+
+                    }
                   })
                   .style("stroke", "black")
                   .style("stroke-width", 3)
                   .call(force.drag)
-                  .on("dblclick",this.show);
+                  .on("dblclick",this.show );
 
           var label = svg.selectAll(".mytext")
-                  .data(dataset.nodes)
+                  .data(graph.nodes)
                   .enter()
                   .append("text")
-                    .text(function (d) { return d.alias; })
+                    .text(function (d) {
+                      if(d.tipo !=3 ){
+                        return d.name;
+                      }
+                       })
                     .style("text-anchor", "middle")
                     .style("font-family", "Arial")
-                    .style("font-size", 12)
+                    .style("font-size", function (d) {
+                      if(d.tipo == 1){
+                        return 25;
+                      }
+                      else{
+                        return 12;
+
+                      }
+                    })
+                    .attr("fill", function (d) {
+                      if(d.tipo == 1){
+                        return "red";
+                      }
+                      else{
+                        return "black";
+
+                      }
+                    })
                     .attr("dx", 0)
                     .attr("dy", -14)
                     .on("click", function(d) {
                     console.log(this.toggle);
-                    if(this.toggle == null) this.toggle=0;
-                     if (this.toggle == 0){
-                         d3.select(this).text(d.name);
-                         this.toggle = 1;
-                    }
-                     else{
-                         d3.select(this).text(d.alias);
-                         this.toggle = 0;
-                     }
+                       if(d.tipo == 2 || d.tipo ==3){
+                          console.log(this.toggle);
+                          if(this.toggle == null) this.toggle=0;
+                           if (this.toggle == 0){
+                               d3.select(this).text(d.name);
+                               this.toggle = 1;
+                          }
+                           else{
+                               d3.select(this).text(d.username);
+
+                               this.toggle = 0;
+                           }
+
+
+                       }
                    }
              );
+          function hola(){
+
+            this.show;
+          }
 
 
           force.on("tick", function(){
@@ -192,9 +256,7 @@ export default {
 
 
 
-        }, response=>{
-           console.log('error cargando los prestadores');
-        });
+
     }, response=>{
        console.log('error cargando los prestadores');
     });

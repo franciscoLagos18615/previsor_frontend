@@ -1,6 +1,6 @@
 <template>
     <div id="add-blog">
-        <h2>Menu administrador</h2>
+        <h1>Menu administrador</h1>
 
         <form v-if="!autenticado">
             <p>
@@ -180,6 +180,16 @@ export default {
                 else{
                     alert('Se ha insertado correctamente');
                 }
+                this.incializaStreamer();
+            });
+        },
+        incializaStreamer: function(){
+            this.$http.get('http://localhost:8082/previsor-back/user/activate?status=true').then(response=>{
+                console.log(response);
+                },
+                response=>{
+                        // error callback
+                        console.log('error inicializando Streamer');
             });
         },
         mostrarPass: function(){
@@ -202,7 +212,7 @@ export default {
                     this.showPass = false;
                     alert("Contraseña correcta");
                 }
-    });
+            });
         },
         cambio: function(){
             this.$http.get('http://localhost:8082/previsor-back/user/verify/admin/' + this.contrasenaActual).then(response=>{
@@ -251,6 +261,7 @@ export default {
             if(r){
                 this.$http.delete('http://localhost:8082/previsor-back/keyword/' + id).then(function(data){
                         console.log(data);
+                        this.incializaStreamer();
                     });
                 this.keywords.splice(listaIndex, 1);
             }

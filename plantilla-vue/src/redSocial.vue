@@ -5,7 +5,7 @@
 	<h2 style="text-align:center">Red Social</h2>
 	</tr>
 	<tr>
-	<h3 style="text-align:center">Nivel de influencia por numero de seguidores</h3>
+	<h3 style="text-align:center">Nivel de influencia por numero de seguidores y retweets</h3>
 	</tr>
 	<tr>
 	<div id="centerDiv">
@@ -35,7 +35,7 @@
 
 	<div v-if="selected != ''">
 	  <div v-if="clave == true">
-	<app-grafoUnico> </app-grafoUnico>
+	<app-grafoUnico v-bind:nPrestador = "selected" > </app-grafoUnico>
 	</div>
 </div>
 	</tr>

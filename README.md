@@ -19,21 +19,20 @@ Incluye:
 
 ## Recuerden instalar ademas para nuestro proyecto
 
+* En la carpeta Previsor_frontend, que es la carpeta principal, instalar:
+* Para los graficos que coloco el victor, depedencia 1: npm install -g vue-cli
 
-* En carpeta previsor que es la principal instalar:
-* Para los graficos que coloco el victor depedencia 1: npm install -g vue-cli
+* En Plantilla-vue instalar 9 dependencias mas:
 
+* Para ver los tweets se necesita, dependencia2: npm install vue-tweet-embed
+* Para los graficos que coloco el victor ,depedencia 3: npm install chart.js chartkick hchs-vue-charts vue-chartjs vue-chartkick
+* Para ver el pop-up(ventana) donde se muestra el tweet en el grafo de redSocial, dependencia 4: npm install vue-js-modal --save
+* Para el mapa en general, dependencia 6: npm install leaflet
+* Para ver el mapa cloropletico (mapa de calor en si), dependencia 7: npm install vue-choropleth --save
+* Dependencia que usa vue-choropleth, dependencia 8: npm install vue2-leaflet --save
+* Para ver el mapa cloropletico (estetica,zoom,colores,etc), dependencia 9: npm install axios --save
 
-
-* En Plantilla-vue instalar estas dependencias :
-
-* Para ver los tweets se necesita: npm install vue-tweet-embed
-* Para los graficos que coloco el victor ,depedencia 2: npm install chart.js chartkick hchs-vue-charts vue-chartjs vue-chartkick
-
-* Luego de todo esto para ver el grafo:
-* en previsor_frontend cortar la carpeta carpeta Sigmajs y pegarla dentro de node_modules de la carpeta plantilla-vue (quedando plantilla-vue/node_modules/sigmajs), finalmente hacer 'npm install' dentro de la carpeta sigma. 
-
-* PARA MAPA 
-
-* npm install axios --save
-* npm install vue-choropleth --save
+* Luego de todo esto, para ver el grafo de redSocial con el D3:
+* 1) En previsor_frontend existe una carpeta llamada d3.
+* 2) Hay que cortarla (ctrl-X) y acceder a : plantilla-vue/node_modules
+* 3) Pegarla en esta carpeta.
