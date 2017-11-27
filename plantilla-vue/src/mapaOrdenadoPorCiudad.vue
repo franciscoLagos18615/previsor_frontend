@@ -1,6 +1,6 @@
 <template >
   <div id="app">
-  <h3 class="center2">Mapa calor chile</h3>
+  <h1 class="center2">Mapa calor chile</h1>
     <ChoroplethMap :data="pyDepartmentsData" titleKey="department_name" idKey="department_id" :value="value" :extraValues="extraValues" geojsonIdKey="dpto" :geojson="paraguayGeojson" :center="center" :colorScale="colorScale" mapStyle="height: 700px;" :zoom="4.5" :mapOptions="mapOptions">
       <template scope="props">
         <InfoControl position="topright" :item="props.currentItem" :unit="props.unit" title="Region" placeholder="Informacion cantidad de tweets por region"></InfoControl>

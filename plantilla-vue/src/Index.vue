@@ -14,7 +14,7 @@
             
         </li>
     </ul>
-    <h3 class="center2">Ranking general</h3>
+    <h1 class="center2">Ranking general</h1>
     <div class="center2">
         <canvas id="mycanvas" count="1" width="350" height="150" ></canvas>
     </div>

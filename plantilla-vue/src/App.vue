@@ -43,11 +43,12 @@
 .leaflet-fake-icon-shadow {
   background-image: url(../node_modules/leaflet/dist/images/marker-shadow.png);
 }
-@import "../node_modules/leaflet/dist/leaflet.css";
+
+/* @import "../node_modules/leaflet/dist/leaflet.css"; */
 
 body {
   margin: 0px;
-  font-family: Helvetica, Verdana, sans-serif;
+  font-family: Open Sans, Verdana, sans-serif;
 }
 
 #side {

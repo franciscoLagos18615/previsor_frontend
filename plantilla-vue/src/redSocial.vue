@@ -2,7 +2,7 @@
 <div id="add-blog">
 <table style="width:100%;">
 	<tr>
-	<h2 style="text-align:center">Red Social</h2>
+	<h1 style="text-align:center">Red Social</h1>
 	</tr>
 	<tr>
 	<h3 style="text-align:center">Nivel de influencia por numero de seguidores</h3>

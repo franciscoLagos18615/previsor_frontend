@@ -1,6 +1,6 @@
 <template>
     <div id="add-blog">
-        <h2>Menu administrador</h2>
+        <h1>Menu administrador</h1>
 
         <form v-if="!autenticado">
             <p>
