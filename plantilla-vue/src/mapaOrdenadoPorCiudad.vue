@@ -1,6 +1,6 @@
 <template >
   <div id="app">
-  <h3 class="center2">Mapa calor chile</h3>
+  <h3 class="center2">MAPA CALOR DE CHILE </h3>
     <div id= "mapa">
       <ChoroplethMap :data="pyDepartmentsData" titleKey="department_name" idKey="department_id" :value="value" :extraValues="extraValues"  geojsonIdKey="dpto" :geojson="chilejson" :center="center" :colorScale="colorScale" mapStyle="height: 500px;width: 600px;position: absolute; top:15%; left:27%;margin auto  " :zoom="4.5" :mapOptions="mapOptions">
         <template scope="props">
