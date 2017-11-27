@@ -1,19 +1,23 @@
 <template >
   <div id="app">
   <h3 class="center2">Mapa calor chile</h3>
-    <ChoroplethMap :data="pyDepartmentsData" titleKey="department_name" idKey="department_id" :value="value" :extraValues="extraValues" geojsonIdKey="dpto" :geojson="paraguayGeojson" :center="center" :colorScale="colorScale" mapStyle="height: 700px;" :zoom="4.5" :mapOptions="mapOptions">
-      <template scope="props">
-        <InfoControl position="topright" :item="props.currentItem" :unit="props.unit" title="Region" placeholder="Informacion cantidad de tweets por region"></InfoControl>
-        <ReferenceChart title="Tweets por Region" :colorScale="colorScale" :min="props.min" :max="props.max" position="topleft"></ReferenceChart>
-      </template>
-    </ChoroplethMap>
+    <div id= "mapa">
+      <ChoroplethMap :data="pyDepartmentsData" titleKey="department_name" idKey="department_id" :value="value" :extraValues="extraValues"  geojsonIdKey="dpto" :geojson="chilejson" :center="center" :colorScale="colorScale" mapStyle="height: 500px;width: 600px;position: absolute; top:15%; left:27%;margin auto  " :zoom="4.5" :mapOptions="mapOptions">
+        <template scope="props">
+          <InfoControl position="topright" :item="props.currentItem" :unit="props.unit" title="Region" placeholder="Prestador con mayor connotacion"></InfoControl>
+        </template>
+      </ChoroplethMap>
+
+
+    </div>
+
   </div>
 </template>
 
 <script>
 import { ChoroplethMap, InfoControl, ReferenceChart } from 'vue-choropleth'
-//import { geojson } from './data/py-departments-geojson'
-import paraguayGeojson from './data/chile.json'
+
+import chilejson from './data/chile.json'
 import { pyDepartmentsData } from './data/por_region_data'
 export default {
   name: "app",
@@ -23,16 +27,23 @@ export default {
       center: [-33.469100, -70.642000],
       
       pyDepartmentsData,
-      paraguayGeojson,
-      colorScale: ["e7d090", "e9ae7b", "de7062","F32C00"],
+      chilejson,
+      colorScale: ["000066", "006600", "660000","ccffff","ffffcc", "ff0000", "8c66ff","000000","0099ff", "73828c", "ffff00","0000ff","ff944d"],
+     
       value: {
         key: "amount_w",
-        metric: "Tweets Asociados"
+        metric: "% Aprobacion",
+        
+
       },
       extraValues: [{
-        key: "amount_m",
-        metric: "% boys"
+
+      
+        key: "prestador",
+        metric: "",
+
       }],
+
       mapOptions: {
         attributionControl: false
       }
@@ -40,8 +51,9 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
 @import "../node_modules/leaflet/dist/leaflet.css";
+
 
 
 </style>
