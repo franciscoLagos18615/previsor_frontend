@@ -45,10 +45,9 @@
   <div v-if="clave == true">
   <h3>Tweets</h3>
 
-    <div v-for="ptweet in pTweets" v-if="selected == ptweet.prestadorId" style="margin-left: auto; margin-right: auto;">
-      <div v-for="valoracion in ptweet.valoraciones">
-        <component-view :id="(valoracion.idTweet).toString()"></component-view>
-      </div>
+    <div v-for="ptweet in lostweets" v-if="selected == ptweet.prestador" style="margin-left: auto; margin-right: auto;">
+
+        <component-view :id=ptweet.tweetId></component-view>
     </div>
 
   </div>
@@ -79,7 +78,8 @@ export default {
             clave: false,
             valoraciones:[],
             pTweets: [],
-            arregloTweets: []
+            arregloTweets: [],
+            lostweets:[]
         }
     },
     methods: {
@@ -105,7 +105,133 @@ export default {
     .then(response=>{
        // get body data
       this.prestadores = response.body;
-      console.log('prestadores',this.prestadores)
+      console.log('prestadores',this.prestadores);
+
+      var a = [
+    {"prestador": 1, "tweetId" : '927363782703239169' },
+    {"prestador": 1, "tweetId" : '931936739463254016' },
+    {"prestador": 1, "tweetId" : '934548067528912902' },
+    {"prestador": 1, "tweetId" : '934543526079188992' },
+    {"prestador": 1, "tweetId" : '927363782703239169' },
+    {"prestador": 1, "tweetId" : '931936739463254016' },
+    {"prestador": 1, "tweetId" : '934548067528912902' },
+    {"prestador": 1, "tweetId" : '934543526079188992' },
+    {"prestador": 2, "tweetId" : '927733352676954112' },
+    {"prestador": 2, "tweetId" : '927734181446279170' },
+    {"prestador": 2, "tweetId" : '927764249723785216' },
+    {"prestador": 2, "tweetId" : '927337586661711872' },
+    {"prestador": 2, "tweetId" : '927363095894396928' },
+    {"prestador": 2, "tweetId" : '927708780829315073' },
+    {"prestador": 2, "tweetId" : '927729744925388801' },
+    {"prestador": 2, "tweetId" : '927730931741483014' },
+    {"prestador": 2, "tweetId" : '927732458531049472' },
+    {"prestador": 2, "tweetId" : '927734048193118209' },
+    {"prestador": 3, "tweetId" : '933702110729986048' },
+    {"prestador": 3, "tweetId" : '933054810860982272' },
+    {"prestador": 3, "tweetId" : '927735602161823744' },
+    {"prestador": 3, "tweetId" : '926967648046538752' },
+    {"prestador": 3, "tweetId" : '927239259769196544' },
+    {"prestador": 3, "tweetId" : '927733840080195584' },
+    {"prestador": 3, "tweetId" : '933057255909466112' },
+    {"prestador": 3, "tweetId" : '931581959167512577' },
+    {"prestador": 4, "tweetId" : '934083863915253760' },
+    {"prestador": 4, "tweetId" : '934083863915253760' },
+    {"prestador": 4, "tweetId" : '933164265623633926' },
+    {"prestador": 5, "tweetId" : '933528881843318785' },
+    {"prestador": 5, "tweetId" : '927272351363866624' },
+    {"prestador": 5, "tweetId" : '927639352091426816' },
+    {"prestador": 5, "tweetId" : '927639836810403840' },
+    {"prestador": 5, "tweetId" : '927268052357455873' },
+    {"prestador": 5, "tweetId" : '931966529427656705' },
+    {"prestador": 5, "tweetId" : '932932010116550658' },
+    {"prestador": 5, "tweetId" : '933712141512794113' },
+    {"prestador": 5, "tweetId" : '934552791321907201' },
+    {"prestador": 5, "tweetId" : '934552802151555072' },
+    {"prestador": 6, "tweetId" : '926901970165739522' },
+    {"prestador": 6, "tweetId" : '926899753647878144' },
+    {"prestador": 6, "tweetId" : '933707132553367552' },
+    {"prestador": 6, "tweetId" : '933707132553367552' },
+    {"prestador": 6, "tweetId" : '933707132553367552' },
+    {"prestador": 6, "tweetId" : '933707132553367552' },
+    {"prestador": 6, "tweetId" : '933707132553367552' },
+    {"prestador": 6, "tweetId" : '933707132553367552' },
+    {"prestador": 6, "tweetId" : '933707132553367552' },
+    {"prestador": 6, "tweetId" : '933707132553367552' },
+    {"prestador": 8, "tweetId" : '927599290750513152' },
+    {"prestador": 8, "tweetId" : '927733352676954112' },
+    {"prestador": 8, "tweetId" : '927734181446279170' },
+    {"prestador": 8, "tweetId" : '927764249723785216' },
+    {"prestador": 8, "tweetId" : '927337586661711872' },
+    {"prestador": 8, "tweetId" : '927363095894396928' },
+    {"prestador": 8, "tweetId" : '927708780829315073' },
+    {"prestador": 8, "tweetId" : '927729744925388801' },
+    {"prestador": 8, "tweetId" : '927730931741483014' },
+    {"prestador": 8, "tweetId" : '927732458531049472' },
+    {"prestador": 10, "tweetId" : '933406362637406209' },
+    {"prestador": 10, "tweetId" : '931582860821237760' },
+    {"prestador": 10, "tweetId" : '927362284053078016' },
+    {"prestador": 10, "tweetId" : '927666253673705472' },
+    {"prestador": 10, "tweetId" : '931338119470895104' },
+    {"prestador": 10, "tweetId" : '933406700710883328' },
+    {"prestador": 10, "tweetId" : '926885352832425984' },
+    {"prestador": 10, "tweetId" : '927365386689024001' },
+    {"prestador": 10, "tweetId" : '927735111159832578' },
+    {"prestador": 10, "tweetId" : '931162802294796289' },
+    {"prestador": 10, "tweetId" : '933406362637406209' },
+    {"prestador": 10, "tweetId" : '931582860821237760' },
+    {"prestador": 10, "tweetId" : '927362284053078016' },
+    {"prestador": 10, "tweetId" : '927666253673705472' },
+    {"prestador": 10, "tweetId" : '931338119470895104' },
+    {"prestador": 10, "tweetId" : '933406700710883328' },
+    {"prestador": 10, "tweetId" : '926885352832425984' },
+    {"prestador": 10, "tweetId" : '927365386689024001' },
+    {"prestador": 10, "tweetId" : '927735111159832578' },
+    {"prestador": 10, "tweetId" : '931162802294796289' },
+    {"prestador": 10, "tweetId" : '933406362637406209' },
+    {"prestador": 10, "tweetId" : '931582860821237760' },
+    {"prestador": 10, "tweetId" : '927362284053078016' },
+    {"prestador": 10, "tweetId" : '927666253673705472' },
+    {"prestador": 10, "tweetId" : '931338119470895104' },
+    {"prestador": 10, "tweetId" : '933406700710883328' },
+    {"prestador": 10, "tweetId" : '926885352832425984' },
+    {"prestador": 10, "tweetId" : '927365386689024001' },
+    {"prestador": 10, "tweetId" : '927735111159832578' },
+    {"prestador": 10, "tweetId" : '931162802294796289' },
+    {"prestador": 12, "tweetId" : '927357863810519040' },
+    {"prestador": 12, "tweetId" : '927596652864720897' },
+    {"prestador": 12, "tweetId" : '933131281642283009' },
+    {"prestador": 12, "tweetId" : '933706297639350272' },
+    {"prestador": 12, "tweetId" : '933706906589331456' },
+    {"prestador": 12, "tweetId" : '927733352676954112' },
+    {"prestador": 12, "tweetId" : '927734181446279170' },
+    {"prestador": 12, "tweetId" : '927764249723785216' },
+    {"prestador": 12, "tweetId" : '927337586661711872' },
+    {"prestador": 12, "tweetId" : '927363095894396928' },
+    {"prestador": 13, "tweetId" : '933706262872842242' },
+    {"prestador": 13, "tweetId" : '933703397290758145' },
+    {"prestador": 13, "tweetId" : '931333113149472768' },
+    {"prestador": 13, "tweetId" : '933328023411183617' },
+    {"prestador": 13, "tweetId" : '933328023411183617' },
+    {"prestador": 13, "tweetId" : '933328023411183617' },
+    {"prestador": 13, "tweetId" : '927741406382133248' },
+    {"prestador": 13, "tweetId" : '931952193279873024' },
+    {"prestador": 13, "tweetId" : '934641271477555200' },
+    {"prestador": 13, "tweetId" : '931585541816180737' },
+    {"prestador": 14, "tweetId" : '933420945036935169' },
+    {"prestador": 14, "tweetId" : '927732636134596608' },
+    {"prestador": 14, "tweetId" : '927261553782648832' },
+    {"prestador": 14, "tweetId" : '927348115946004482' },
+    {"prestador": 14, "tweetId" : '927362733611405312' },
+    {"prestador": 14, "tweetId" : '927366076937236480' },
+    {"prestador": 14, "tweetId" : '927369950842507264' },
+    {"prestador": 14, "tweetId" : '927730098962337793' },
+    {"prestador": 14, "tweetId" : '927730971578916865' },
+    {"prestador": 14, "tweetId" : '927731472387190785' }
+  ];
+  this.lostweets = a;
+  console.log(a);
+
+
 
       for (var i = this.prestadores.length - 1; i >= 0; i--) {
         this.valoraciones.push(this.prestadores[i].valoraciones);
