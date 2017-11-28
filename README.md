@@ -10,12 +10,8 @@ Incluye:
 
 ### Instalación plantilla Vue
 
-* ir a carpeta `plantilla vue`
-* instalar dependencias de node `npm install`
-* ejecutar `npm run dev`
-* generar distribuible `npm run build`
-* SOLO UNA VES, Install [gjslint](https://developers.google.com/closure/utilities/docs/linter_howto?hl=en).
-
+* Ir a carpeta `plantilla vue`
+* Instalar dependencias de node `npm install`
 
 ## Recuerden instalar ademas para nuestro proyecto
 
@@ -36,3 +32,5 @@ Incluye:
 * 1) En previsor_frontend existe una carpeta llamada d3.
 * 2) Hay que cortarla (ctrl-X) y acceder a : plantilla-vue/node_modules
 * 3) Pegarla en esta carpeta.
+
+* Ejecutar `npm run dev`
