@@ -11,9 +11,9 @@
 	<div id="centerDiv">
 
 	<ul class="centerUL">
-    <li><canvas id="circlecanvas" width="40" height="40"></canvas>Menos de 5000</li>
-    <li><canvas id="circlecanvas2" width="40" height="40"></canvas> Entre 5000 y 10000</li>
-    <li><canvas id="circlecanvas3" width="40" height="40"></canvas> Entre 10000 y 15000</li>
+    <li><canvas id="circlecanvas" width="40" height="40"></canvas>Menos de 500</li>
+    <li><canvas id="circlecanvas2" width="40" height="40"></canvas> Entre 500 y 1500</li>
+    <li><canvas id="circlecanvas3" width="40" height="40"></canvas> Más de 1500</li>
 
 </ul>
 </div>

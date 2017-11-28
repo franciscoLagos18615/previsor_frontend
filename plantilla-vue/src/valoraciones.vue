@@ -47,7 +47,7 @@
 
     <div v-for="ptweet in pTweets" v-if="selected == ptweet.prestadorId" style="margin-left: auto; margin-right: auto;">
       <div v-for="valoracion in ptweet.valoraciones">
-        <component-view :id="valoracion.idTweet"></component-view>
+        <component-view :id="(valoracion.idTweet).toString()"></component-view>
       </div>
     </div>
 
@@ -70,7 +70,7 @@ export default {
     components:{
         'component-view': Tweet,
        'app-valoracionUnica':valor
-       
+
     },
     data() {
         return{
@@ -110,9 +110,9 @@ export default {
       for (var i = this.prestadores.length - 1; i >= 0; i--) {
         this.valoraciones.push(this.prestadores[i].valoraciones);
       }
-      
+
       console.log('valoraciones',this.valoraciones);
-    
+
     }, response=>{
        // error callback
        console.log('error cargando los prestadores');
@@ -127,7 +127,7 @@ export default {
       for (var i = this.pTweets.length - 1; i >= 0; i--) {
         this.arregloTweets.push(this.pTweets[i].valoraciones);
       }
-    
+
     }, response=>{
        // error callback
        console.log('error cargando los tweets');

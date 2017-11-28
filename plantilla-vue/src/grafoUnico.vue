@@ -160,10 +160,10 @@ export default {
                   })
                   .style("fill", function(d, i){
                     if(d.tipo ==1){
-                      if(d.ranking < 5000){
+                      if(d.ranking < 500){
                         return "#f0e837";
                       }
-                      else if(d.ranking >= 5000 && d.ranking < 10000){
+                      else if(d.ranking >= 500 && d.ranking < 1500){
                         return  "#4e9a4e";
                       }
                       else{
